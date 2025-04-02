@@ -176,3 +176,4 @@ Esta versión inicial (V 0.1) tiene un alcance limitado:
 
 ### Diseño
 Diagrama de clases (UML) en PlantUML:
+<img src="clasesv01.png" alt="Diagrama de clses V 0.1" style="display: block; margin: 0 auto;">
