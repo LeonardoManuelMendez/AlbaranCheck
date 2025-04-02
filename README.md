@@ -1,7 +1,7 @@
 # ALBARANCHECK
 ## Proyecto de Desarrollo de Aplicaciones Multiplataformas
 
-![logo](logoalbaranchek.png)
+<img src="logoalbaranchek.png" alt="Logo del proyecto" style="display: block; margin: 0 auto;">
 
 **Leonardo Manuel Méndez Pérez**
 24/06/2024
