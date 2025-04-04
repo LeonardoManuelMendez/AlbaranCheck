@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_JKR94A_mEfCa2eeoRS-vlw">
+  <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JIkGoA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JuxLAA_mEfCa2eeoRS-vlw" targetItem="_Ju3RoA_mEfCa2eeoRS-vlw" sourceItem="_Juwj8A_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Jvu0UQ_mEfCa2eeoRS-vlw" targetItem="_JvvbYA_mEfCa2eeoRS-vlw" sourceItem="_Jvu0UA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JvyesQ_mEfCa2eeoRS-vlw" targetItem="_Jvzs0A_mEfCa2eeoRS-vlw" sourceItem="_JvyesA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Jv3-QQ_mEfCa2eeoRS-vlw" targetItem="_Jv9d0A_mEfCa2eeoRS-vlw" sourceItem="_Jv3-QA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jv5MYA_mEfCa2eeoRS-vlw" sourceAnchor="0.0,128.0" targetAnchor="455.0,124.0" target="_Jwaw0A_mEfCa2eeoRS-vlw" source="_Jv9d0A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnwg_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2MBoA_mEfCa2eeoRS-vlw" sourceX="-651" targetY="514"/>
+    <nameVisual xmi:id="_Jv6agA_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2N20A_mEfCa2eeoRS-vlw" position="367.74992182638107,-7.287726797587084"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Jv7ooA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="producto" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1MA_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2NPxw_mEfCa2eeoRS-vlw" position="-99.2080106729801,-17.629522471087057"/>
+      <visibility xmi:id="_Jv82wA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv8PsQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jv8PsA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnww_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2N20Q_mEfCa2eeoRS-vlw" position="150.24815529780244,495.83399894074864"/>
+      <visibility xmi:id="_Jv82wg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv82wQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JwBvQQ_mEfCa2eeoRS-vlw" targetItem="_JwELiA_mEfCa2eeoRS-vlw" sourceItem="_JwBvQA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwCWUA_mEfCa2eeoRS-vlw" sourceAnchor="254.0,0.0" targetAnchor="910.0,62.0" target="_Jwaw0A_mEfCa2eeoRS-vlw" source="_JwELiA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnxA_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2MBog_mEfCa2eeoRS-vlw" sourceY="-117" targetX="343"/>
+    <nameVisual xmi:id="_JwC9YA_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2PE8A_mEfCa2eeoRS-vlw" position="-6.788932058610612,-136.77827898977608"/>
+    </nameVisual>
+    <sourceRole xmi:id="_JwC9YQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="albaran" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1MQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2Od4g_mEfCa2eeoRS-vlw" position="-38.981001670346814,-84.2512227547659"/>
+      <visibility xmi:id="_JwDkcg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwDkcQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwDkcA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnxQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2PE8Q_mEfCa2eeoRS-vlw" position="328.8961572307501,-335.97315330537134"/>
+      <visibility xmi:id="_JwDkdA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwDkcw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwELgA_mEfCa2eeoRS-vlw" target="_JwELiA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVAsA_mEfCa2eeoRS-vlw"/>
+    <nameVisual xmi:id="_JwELgQ_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JwELgg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="fecha" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlxAAQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwELgw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwELhA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwELhQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVAsQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwELhg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwELhw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwJEAA_mEfCa2eeoRS-vlw" sourceAnchor="0.0,158.0" targetAnchor="327.0,124.0" target="_JwK5MA_mEfCa2eeoRS-vlw" source="_Jv9d0A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO0Q_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2MBoQ_mEfCa2eeoRS-vlw" sourceX="-1049" targetY="213"/>
+    <nameVisual xmi:id="_JwJrEg_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2Od4A_mEfCa2eeoRS-vlw" position="860.0152415609595,-4.908902200346802"/>
+    </nameVisual>
+    <sourceRole xmi:id="_JwJrEw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="productoEnAlbaran" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlzcQA_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2N20g_mEfCa2eeoRS-vlw" position="-130.94138844355632,-15.658151657033159"/>
+      <visibility xmi:id="_JwKSIQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwKSIA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwJrFA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO0g_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2Od4Q_mEfCa2eeoRS-vlw" position="735.6941504196202,197.03453056720025"/>
+      <visibility xmi:id="_JwKSIw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwKSIg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JwJrEQ_mEfCa2eeoRS-vlw" targetItem="_JwK5MA_mEfCa2eeoRS-vlw" sourceItem="_JwJrEA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JwZisQ_mEfCa2eeoRS-vlw" targetItem="_Jwaw0A_mEfCa2eeoRS-vlw" sourceItem="_JwZisA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Jwd0IQ_mEfCa2eeoRS-vlw" targetItem="_Jwd0Ig_mEfCa2eeoRS-vlw" sourceItem="_Jwd0IA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JwfCQQ_mEfCa2eeoRS-vlw" targetItem="_JwfpUA_mEfCa2eeoRS-vlw" sourceItem="_JwfCQA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwhegA_mEfCa2eeoRS-vlw" sourceAnchor="129.0,0.0" targetAnchor="140.0,84.0" target="_JwfpUA_mEfCa2eeoRS-vlw" source="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjqMA_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2MosA_mEfCa2eeoRS-vlw" sourceY="-15" targetX="-1099" targetY="40"/>
+    <bendpoints xmi:id="_J2MosQ_mEfCa2eeoRS-vlw" sourceX="1099" sourceY="-15" targetY="40"/>
+    <stereotypes xmi:id="_JwisoQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjqMg_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JwiFkg_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2PsAA_mEfCa2eeoRS-vlw" position="-560.9016230940342,-24.56860756288893"/>
+    </nameVisual>
+    <sourceRole xmi:id="_JwiFkw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjqMQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2PE8g_mEfCa2eeoRS-vlw" position="2.8209146771577593,-75.56278297889446"/>
+      <visibility xmi:id="_JwjTsQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwjTsA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwisoA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="nuevoInicialConLogo" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3Gog_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2PsAQ_mEfCa2eeoRS-vlw" position="-1164.9171129433012,11.74714383117987"/>
+      <visibility xmi:id="_JwjTsw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwjTsg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JwiFkQ_mEfCa2eeoRS-vlw" targetItem="_Jwlv-Q_mEfCa2eeoRS-vlw" sourceItem="_JwiFkA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jwkh0A_mEfCa2eeoRS-vlw" sourceAnchor="257.0,42.0" targetAnchor="143.0,124.0" target="_JwxWKQ_mEfCa2eeoRS-vlw" source="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjqMw_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2Mosg_mEfCa2eeoRS-vlw" sourceX="142" targetX="-1179" targetY="97"/>
+    <bendpoints xmi:id="_J2Mosw_mEfCa2eeoRS-vlw" sourceX="142" sourceY="159" targetX="-1179" targetY="256"/>
+    <bendpoints xmi:id="_J2MotA_mEfCa2eeoRS-vlw" sourceX="1321" sourceY="159" targetY="256"/>
+    <stereotypes xmi:id="_Jwkh0Q_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRQA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jwkh0g_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2QTEQ_mEfCa2eeoRS-vlw" position="-114.27065901772966,-176.355019251003"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Jwkh0w_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjqNA_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2QTEA_mEfCa2eeoRS-vlw" position="44.94518841238556,-35.083109769315456"/>
+      <visibility xmi:id="_Jwkh1A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwkh1Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jwkh1g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="panelIzquierdo" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3GpA_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2QTEg_mEfCa2eeoRS-vlw" position="-1340.4304443962724,61.0702414491393"/>
+      <visibility xmi:id="_Jwkh1w_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwkh2A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwlI4A_mEfCa2eeoRS-vlw" sourceAnchor="99.0,84.0" targetAnchor="129.0,84.0" target="_Jw2OoA_mEfCa2eeoRS-vlw" source="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRQQ_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2MotQ_mEfCa2eeoRS-vlw" sourceY="17" targetX="1545" targetY="156"/>
+    <bendpoints xmi:id="_J2NPwA_mEfCa2eeoRS-vlw" sourceX="-1545" sourceY="17" targetY="156"/>
+    <stereotypes xmi:id="_JwlI4Q_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRQw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JwlI4g_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2Q6IQ_mEfCa2eeoRS-vlw" position="758.9246212024588,11.330212793480314"/>
+    </nameVisual>
+    <sourceRole xmi:id="_JwlI4w_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRQg_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2Q6IA_mEfCa2eeoRS-vlw" position="2.606601717798185,29.24011537017759"/>
+      <visibility xmi:id="_JwlI5A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlI5Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwlI5g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="panelCentral" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2RhMA_mEfCa2eeoRS-vlw" position="1504.6066017177982,130.05634918610406"/>
+      <visibility xmi:id="_JwlI5w_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlI6A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwlI6Q_mEfCa2eeoRS-vlw" sourceAnchor="159.0,84.0" targetAnchor="190.0,364.0" target="_JxOCGQ_mEfCa2eeoRS-vlw" source="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRRA_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2NPwQ_mEfCa2eeoRS-vlw" sourceY="59" targetX="-1841" targetY="198"/>
+    <bendpoints xmi:id="_J2NPwg_mEfCa2eeoRS-vlw" sourceX="180" sourceY="59" targetX="-1661" targetY="198"/>
+    <bendpoints xmi:id="_J2NPww_mEfCa2eeoRS-vlw" sourceX="180" sourceY="147" targetX="-1661" targetY="286"/>
+    <bendpoints xmi:id="_J2NPxA_mEfCa2eeoRS-vlw" sourceX="1841" sourceY="147" targetY="286"/>
+    <stereotypes xmi:id="_JwlI6g_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmk4UA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JwlI6w_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2SIQA_mEfCa2eeoRS-vlw" position="-195.7,-104.39999999999998"/>
+    </nameVisual>
+    <sourceRole xmi:id="_JwlI7A_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmkRRQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2RhMQ_mEfCa2eeoRS-vlw" position="2.900000000000034,26.799999999999955"/>
+      <visibility xmi:id="_JwlI7Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlI7g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwlI7w_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="panelNuevo" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsw_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2SIQQ_mEfCa2eeoRS-vlw" position="-1877.2,71.10000000000002"/>
+      <visibility xmi:id="_JwlI8A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlI8Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jwlv8A_mEfCa2eeoRS-vlw" sourceAnchor="129.0,84.0" targetAnchor="142.0,164.0" target="_Jxg9AA_mEfCa2eeoRS-vlw" source="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmk4UQ_mEfCa2eeoRS-vlw"/>
+    <bendpoints xmi:id="_J2NPxQ_mEfCa2eeoRS-vlw" sourceY="59" targetX="1898" targetY="198"/>
+    <bendpoints xmi:id="_J2NPxg_mEfCa2eeoRS-vlw" sourceX="-1898" sourceY="59" targetY="198"/>
+    <stereotypes xmi:id="_Jwlv8Q_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfYA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jwlv8g_mEfCa2eeoRS-vlw" text="">
+      <visualProperties xmi:id="_J2SIQw_mEfCa2eeoRS-vlw" position="919.4735730607097,-39.16015558002675"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Jwlv8w_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmk4Ug_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2SIQg_mEfCa2eeoRS-vlw" position="-18.57535981865948,22.41121150328445"/>
+      <visibility xmi:id="_Jwlv9A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwlv9Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jwlv9g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="panelMostrarProductos" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3ttQ_mEfCa2eeoRS-vlw"/>
+      <visualProperties xmi:id="_J2SvUA_mEfCa2eeoRS-vlw" position="1798.7738488078844,134.51183473377102"/>
+      <visibility xmi:id="_Jwlv9w_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwlv-A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwwvEA_mEfCa2eeoRS-vlw" source="_JwxWKQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfYQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JwwvEQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfYw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JwwvEg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JwwvEw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfYg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwwvFA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwwvFQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwwvFg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="botonNuevo" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl4Uww_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwwvFw_mEfCa2eeoRS-vlw" label="~"/>
+      <cardinality xmi:id="_JwwvGA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JwxWIA_mEfCa2eeoRS-vlw" source="_JwxWKQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfZA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JwxWIQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmGcA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JwxWIg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JwxWIw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmlfZQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwxWJA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwxWJQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JwxWJg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="botonProductos" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl470A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwxWJw_mEfCa2eeoRS-vlw" label="~"/>
+      <cardinality xmi:id="_JwxWKA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Jw4D0Q_mEfCa2eeoRS-vlw" targetItem="_Jw88WQ_mEfCa2eeoRS-vlw" sourceItem="_Jw4D0A_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw4D0g_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmicEQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw5R8w_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjDIA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw5R8A_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw5R8Q_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmicEg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw5R9Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw5R9A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw5R8g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="botonIniciarSesion" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw5R9w_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw5R9g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw6gEA_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmfYwA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw6gEQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmf_0A_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw6gEg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw6gEw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmfYwQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw6gFA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw6gFQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw6gFg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="labelIncioSesion" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0qYg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw6gFw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw6gGA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw7HIA_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmgm4A_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw7HIQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmgm4g_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw7HIg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw7HIw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmgm4Q_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7HJA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw7HJQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw7HJg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="labelUsuario" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1RcA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7HJw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw7HKA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw7HKQ_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmhN8A_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw7HKg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmhN8g_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw7HKw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw7HLA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmhN8Q_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7HLQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw7HLg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw7HLw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="textFieldUsuario" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1Rcg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7HMA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw7HMQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw7uMA_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmhN8w_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw7uMQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmh1AA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw7uMg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw7uMw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmhN9A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7uNA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw7uNQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw7uNg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="labelClave" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1RdA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw7uNw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw7uOA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw8VQA_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmh1AQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw8VQQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmicEA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw8VQg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw8VQw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmh1Ag_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw8VRA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw8VRQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw8VRg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="textFieldClave" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw8VRw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw8VSA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Jw88UA_mEfCa2eeoRS-vlw" source="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjDIQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jw88UQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjDIw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jw88Ug_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jw88Uw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmjDIg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw88VA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw88VQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jw88Vg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="panelUnico" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl2fkQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw88Vw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88WA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxCb4Q_mEfCa2eeoRS-vlw" targetItem="_JxOCGQ_mEfCa2eeoRS-vlw" sourceItem="_JxCb4A_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxCb4g_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmGcQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGGQg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmtgA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxFfMA_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGGQA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmGcg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUYA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxGtWw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGGQQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jButton1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl5i5A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUYg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxHUYQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDC8A_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmtgQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGGRg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmmtgw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGGQw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGGRA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmmtgg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUZQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxHUZA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGGRQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jButton2" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8Q_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUZw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxHUZg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDC8Q_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmthA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGGSg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmnUkA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGGRw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGGSA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmmthQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUag_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxHUaQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGGSQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8w_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUbA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxHUaw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDC8g_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmnUkQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGGTg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmnUkw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGGSw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGGTA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmnUkg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUbw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxHUbg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGGTQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel2" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUcQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxHUcA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDC8w_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmn7oA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGtUg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmoisA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGGTw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGtUA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmn7oQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUdA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxHUcw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGtUQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel3" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxHUdg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxHUdQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDC9A_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmpJwQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGtVg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmpJww_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGtUw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGtVA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmpJwg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxH7cg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxH7cQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGtVQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jTable2" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxH7dA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxH7cw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxDqAA_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmpw0w_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxGtWg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX4A_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxGtVw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxGtWA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmpw1A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxH7dw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxH7dg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxGtWQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jTextField1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_Iw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxH7eQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxH7eA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxDqAQ_mEfCa2eeoRS-vlw" subClass="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcH70A_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxEREQ_mEfCa2eeoRS-vlw" targetItem="_JxOCUg_mEfCa2eeoRS-vlw" sourceItem="_JxEREA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxEREw_mEfCa2eeoRS-vlw" targetItem="_JxOCWA_mEfCa2eeoRS-vlw" sourceItem="_JxEREg_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxH7ew_mEfCa2eeoRS-vlw" subClass="_Jxg9AA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcKYEA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxH7fA_mEfCa2eeoRS-vlw" subClass="_JwfpUA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlGRoA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxIigA_mEfCa2eeoRS-vlw" subClass="_JwxWKQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlM_UA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxIigQ_mEfCa2eeoRS-vlw" subClass="_Jw2OoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlNmYA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxKXsQ_mEfCa2eeoRS-vlw" targetItem="_Jxg9AA_mEfCa2eeoRS-vlw" sourceItem="_JxKXsA_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxK-wA_mEfCa2eeoRS-vlw" source="_Jxg9AA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX4Q_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxLl0w_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX4w_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxLl0A_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxLl0Q_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX4g_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM4Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxMM4A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxLl0g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl8mMg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM4w_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxMM4g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxK-wQ_mEfCa2eeoRS-vlw" source="_Jxg9AA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX5A_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxLl1w_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmq-8A_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxLl1A_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxLl1Q_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmqX5Q_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM5g_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxMM5Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxLl1g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jScrollPane1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM6A_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxMM5w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxK-wg_mEfCa2eeoRS-vlw" source="_Jxg9AA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmq-8Q_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxLl2w_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmq-8w_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxLl2A_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxLl2Q_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmq-8g_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM6w_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxMM6g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxLl2g_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="table" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxMM7Q_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxMM7A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxK-xA_mEfCa2eeoRS-vlw" targetItem="_Jxg9Fg_mEfCa2eeoRS-vlw" sourceItem="_JxK-ww_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxK-xg_mEfCa2eeoRS-vlw" targetItem="_Jxg9HA_mEfCa2eeoRS-vlw" sourceItem="_JxK-xQ_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxNbAA_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmoisQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxNbAQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmoisw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxNbAg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxNbAw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmoisg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxNbBA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxNbBQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxNbBg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jScrollPane1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xBQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxNbBw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxNbCA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxNbCQ_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmoitA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxNbCg_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmpJwA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxNbCw_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxNbDA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmoitQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxNbDQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxNbDg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxNbDw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jScrollPane3" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxNbEA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxNbEQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxOCEA_mEfCa2eeoRS-vlw" source="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmpw0A_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxOCEQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmpw0g_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_JxOCEg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_JxOCEw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jmpw0Q_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCFA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxOCFQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxOCFg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jTextArea1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_IQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCFw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCGA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxWk8A_mEfCa2eeoRS-vlw" subClass="_JxXzEA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlPbkA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxXMAA_mEfCa2eeoRS-vlw" targetItem="_JxXzEA_mEfCa2eeoRS-vlw" sourceItem="_JxWk8Q_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_JxZBMA_mEfCa2eeoRS-vlw" subClass="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcM0UA_mEfCa2eeoRS-vlw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxZBMg_mEfCa2eeoRS-vlw" targetItem="_JxdSoA_mEfCa2eeoRS-vlw" sourceItem="_JxZBMQ_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxZoQA_mEfCa2eeoRS-vlw" source="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmrmAA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jxa2Yw_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmrmAg_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jxa2YA_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jxa2YQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmrmAQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jxbddw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jxbddg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jxa2Yg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90Ug_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxbdeQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxbdeA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxZoQQ_mEfCa2eeoRS-vlw" source="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmrmAw_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jxa2Zw_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNEA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jxa2ZA_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jxa2ZQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmrmBA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxbdfA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jxbdew_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jxa2Zg_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jLabel2" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90VA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEgQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxcEgA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxZoQg_mEfCa2eeoRS-vlw" source="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNEQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_Jxa2aw_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNEw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jxa2aA_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jxa2aQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNEg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEhA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxcEgw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Jxa2ag_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jScrollPane1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEhg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxcEhQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxZoQw_mEfCa2eeoRS-vlw" source="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNFA_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxbdcQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jms0IA_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jxa2bA_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jxa2bQ_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmsNFQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEiQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxcEiA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxbdcA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="jTable1" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEiw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxcEig_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_JxZoRA_mEfCa2eeoRS-vlw" source="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jms0IQ_mEfCa2eeoRS-vlw"/>
+    <stereotypes xmi:id="_JxbddQ_mEfCa2eeoRS-vlw" name="Reference">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jms0Iw_mEfCa2eeoRS-vlw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Jxbdcg_mEfCa2eeoRS-vlw" text=""/>
+    <sourceRole xmi:id="_Jxbdcw_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jms0Ig_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEjg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxcEjQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_JxbddA_mEfCa2eeoRS-vlw" aggregationKind="NONE" name="ean_leido_textField" navigable="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl_CcA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxcEkA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxcEjw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxZoRg_mEfCa2eeoRS-vlw" targetItem="_JxdSwA_mEfCa2eeoRS-vlw" sourceItem="_JxZoRQ_mEfCa2eeoRS-vlw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_JxaPUQ_mEfCa2eeoRS-vlw" targetItem="_JxdSxg_mEfCa2eeoRS-vlw" sourceItem="_JxaPUA_mEfCa2eeoRS-vlw"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Juwj8A_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JuxLAA_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Ju3RoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmTLgA_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Jvu0UA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_Jvu0UQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JvvbYA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmTykA_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JvyesA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JvyesQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jvzs0A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO0w_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Jv3-QA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_Jv3-QQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jv9d0A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnwA_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JwBvQA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JwBvQQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JwELiA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmTykQ_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JwJrEA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JwJrEQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JwK5MA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO0A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JwZisA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JwZisQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jwaw0A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmVnwQ_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Jwd0IA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_Jwd0IQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jwd0Ig_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW16A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JwfCQA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JwfCQQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JwfpUA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO1A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JwiFkA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JwiFkQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jwlv-Q_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW14A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Jw4D0A_mEfCa2eeoRS-vlw" sourceConnectionVisual="_Jw4D0Q_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jw88WQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmWO1Q_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxCb4A_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxCb4Q_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JxOCGQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW14g_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxEREA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxEREQ_mEfCa2eeoRS-vlw" text="Creates new form NuevoPrueba" item="_JxOCUg_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW14w_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxEREg_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxEREw_mEfCa2eeoRS-vlw" text="This method is called from within the constructor to initialize the form.&#xA;     * WARNING: Do NOT modify this code. The content of this method is always&#xA;     * regenerated by the Form Editor." item="_JxOCWA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW15A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxKXsA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxKXsQ_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_Jxg9AA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW15Q_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxK-ww_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxK-xA_mEfCa2eeoRS-vlw" text="Creates new form ProductosGUI" item="_Jxg9Fg_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW15g_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxK-xQ_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxK-xg_mEfCa2eeoRS-vlw" text="This method is called from within the constructor to initialize the form.&#xA;&#x9; * WARNING: Do NOT modify this code. The content of this method is always&#xA;&#x9; * regenerated by the Form Editor." item="_Jxg9HA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW15w_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxWk8Q_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxXMAA_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JxXzEA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW14Q_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxZBMQ_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxZBMg_mEfCa2eeoRS-vlw" text="*&#xA;@author Leonardo Méndez" item="_JxdSoA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW16Q_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxZoRQ_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxZoRg_mEfCa2eeoRS-vlw" text="Creates new form VerificacionGUI" item="_JxdSwA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmW16g_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_JxaPUA_mEfCa2eeoRS-vlw" sourceConnectionVisual="_JxaPUQ_mEfCa2eeoRS-vlw" text="This method is called from within the constructor to initialize the form.&#xA;     * WARNING: Do NOT modify this code. The content of this method is always&#xA;     * regenerated by the Form Editor." item="_JxdSxg_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JmXc8A_mEfCa2eeoRS-vlw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ju3RoA_mEfCa2eeoRS-vlw" comments="_Juwj8A_mEfCa2eeoRS-vlw" targetConnectionVisual="_JuxLAA_mEfCa2eeoRS-vlw" name="Controlador">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbbYQA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Ju3RoQ_mEfCa2eeoRS-vlw" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ju3Rog_mEfCa2eeoRS-vlw" label="+"/>
+    <operations xmi:id="_Ju3Row_mEfCa2eeoRS-vlw" name="obtenerListaProductos" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbebkA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Ju3RpA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3RpQ_mEfCa2eeoRS-vlw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Ju3Rpg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbfCoA_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Ju3Rpw_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ju3RqA_mEfCa2eeoRS-vlw" name="tablaProductos" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbfpsA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Ju3RqQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3Rqg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ju3Rqw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlcP4Q_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Ju3RrA_mEfCa2eeoRS-vlw" name="JTable">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk-V0Q_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ju3RrQ_mEfCa2eeoRS-vlw" name="actualizarArchivoProductos" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JblJQA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Ju3Rrg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3Rrw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ju3RsA_mEfCa2eeoRS-vlw" name="leerAlbaran" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlaasA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Ju3RsQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3Rsg_mEfCa2eeoRS-vlw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Ju3Rsw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlbBwA_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Ju3RtA_mEfCa2eeoRS-vlw" name="ProductoEnAlbaran">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbykoA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ju3RtQ_mEfCa2eeoRS-vlw" name="pdfFile">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlaasQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Ju3Rtg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ju3Rtw_mEfCa2eeoRS-vlw" name="File">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk3oIQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ju3RuA_mEfCa2eeoRS-vlw" name="borrarLineadelTXT" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlbo0A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Ju3RuQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3Rug_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ju3Ruw_mEfCa2eeoRS-vlw" name="listaProductos">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlbo0Q_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Ju3RvA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ju3RvQ_mEfCa2eeoRS-vlw" name="List">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk9HsQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Ju3Rvg_mEfCa2eeoRS-vlw" name="id">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlbo0g_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Ju3Rvw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ju3RwA_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ju3RwQ_mEfCa2eeoRS-vlw" name="convertirListaAArray" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JldeAQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Ju3Rwg_mEfCa2eeoRS-vlw" name="Array">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JleFEA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ju3Rww_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Ju3RxA_mEfCa2eeoRS-vlw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Ju3RxQ_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JldeAw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Ju3Rxg_mEfCa2eeoRS-vlw" name="Object">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlc28Q_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Ju3Rxw_mEfCa2eeoRS-vlw" name="listaProductos">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JldeAg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Ju3RyA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ju3RyQ_mEfCa2eeoRS-vlw" name="List">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk9HsQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JvlqYA_mEfCa2eeoRS-vlw" name="ComboBoxRenderer">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbgQwA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JvlqYQ_mEfCa2eeoRS-vlw" position="-257.0,255.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_JvlqYg_mEfCa2eeoRS-vlw" keyword="static"/>
+    <visibility xmi:id="_JvlqYw_mEfCa2eeoRS-vlw" label="~"/>
+    <attributes xmi:id="_JvlqZA_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlvx4A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JvlqZQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JvlqZg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JvlqZw_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JvlqaA_mEfCa2eeoRS-vlw" name="ComboBoxRenderer">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbiF8A_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JvlqaQ_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jvlqag_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvlqaw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JvlqbA_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbiF8w_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JvlqbQ_mEfCa2eeoRS-vlw" name="ComboBoxRenderer">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbgQwA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Jvlqbg_mEfCa2eeoRS-vlw" name="getTableCellRendererComponent">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLsA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jvlqbw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkywA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JvlqcA_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkywQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JvlqcQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvlqcg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jvlqcw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLtw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JvlqdA_mEfCa2eeoRS-vlw" name="Component">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jli9kA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JvlqdQ_mEfCa2eeoRS-vlw" name="table">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLsQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvlqdg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvlqdw_mEfCa2eeoRS-vlw" name="JTable">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk-V0Q_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JvlqeA_mEfCa2eeoRS-vlw" name="value">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLsg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JvlqeQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvlqeg_mEfCa2eeoRS-vlw" name="Object">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlc28Q_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jvlqew_mEfCa2eeoRS-vlw" name="isSelected">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLsw_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JvlqfA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JvlqfQ_mEfCa2eeoRS-vlw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jvlqfg_mEfCa2eeoRS-vlw" name="hasFocus">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLtA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvlqfw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JvlqgA_mEfCa2eeoRS-vlw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JvlqgQ_mEfCa2eeoRS-vlw" name="row">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLtQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvlqgg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvlqgw_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JvlqhA_mEfCa2eeoRS-vlw" name="column">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlkLtg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JvlqhQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvlqhg_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JvsYEA_mEfCa2eeoRS-vlw" name="ComboBoxEditor">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbj7IA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JvsYEQ_mEfCa2eeoRS-vlw" position="32.0,452.0" size="-1.0,-1.0"/>
+    <keywords xmi:id="_JvsYEg_mEfCa2eeoRS-vlw" keyword="static"/>
+    <visibility xmi:id="_JvsYEw_mEfCa2eeoRS-vlw" label="~"/>
+    <operations xmi:id="_JvsYFA_mEfCa2eeoRS-vlw" name="ComboBoxEditor">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlnPAA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JvsYFQ_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JvsYFg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JvsYFw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JvsYGA_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlnPBA_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JvsYGQ_mEfCa2eeoRS-vlw" name="ComboBoxEditor">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbj7IA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JvsYGg_mEfCa2eeoRS-vlw" name="checkBox">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlnPAQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JvsYGw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JvsYHA_mEfCa2eeoRS-vlw" name="JCheckBox">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jlmn8Q_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JvvbYA_mEfCa2eeoRS-vlw" comments="_Jvu0UA_mEfCa2eeoRS-vlw" targetConnectionVisual="_Jvu0UQ_mEfCa2eeoRS-vlw" name="AlbaranCheck">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbqo0A_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JvvbYQ_mEfCa2eeoRS-vlw" position="131.0,598.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JvvbYg_mEfCa2eeoRS-vlw" label="+"/>
+    <operations xmi:id="_JvvbYw_mEfCa2eeoRS-vlw" name="main" staticOperation="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JvvbZA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JvvbZQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JvvbZg_mEfCa2eeoRS-vlw" name="args">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4Q_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JvvbZw_mEfCa2eeoRS-vlw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_JvvbaA_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jvzs0A_mEfCa2eeoRS-vlw" comments="_JvyesA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JvyesQ_mEfCa2eeoRS-vlw" name="Usuarios">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb5SUA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jvzs0Q_mEfCa2eeoRS-vlw" position="-42.0,728.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jvzs0g_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jvzs0w_mEfCa2eeoRS-vlw" name="codigoUsuario">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlzcQg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jvzs1A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvzs1Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jvzs1g_mEfCa2eeoRS-vlw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jvzs1w_mEfCa2eeoRS-vlw" name="nombreUsuario">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0DUA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jvzs2A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvzs2Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jvzs2g_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jvzs2w_mEfCa2eeoRS-vlw" name="tipoUsuario">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0DUQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jvzs3A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvzs3Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jvzs3g_mEfCa2eeoRS-vlw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jvzs3w_mEfCa2eeoRS-vlw" name="Usuarios">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb55YA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jvzs4A_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jvzs4Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvzs4g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jvzs4w_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb6gcw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jvzs5A_mEfCa2eeoRS-vlw" name="Usuarios">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb5SUA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Jvzs5Q_mEfCa2eeoRS-vlw" name="codigoUsuario">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb55YQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvzs5g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvzs5w_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jvzs6A_mEfCa2eeoRS-vlw" name="nombreUsuario">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb55Yg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvzs6Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvzs6g_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jvzs6w_mEfCa2eeoRS-vlw" name="tipoUsuario">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb6gcA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jvzs7A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jvzs7Q_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Jvzs7g_mEfCa2eeoRS-vlw" name="toString">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb6gdA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jvzs7w_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb7HgA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Jvzs8A_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb7HgQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jvzs8Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jvzs8g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jvzs8w_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb6gdQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jvzs9A_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jv9d0A_mEfCa2eeoRS-vlw" comments="_Jv3-QA_mEfCa2eeoRS-vlw" targetConnectionVisual="_Jv3-QQ_mEfCa2eeoRS-vlw" name="Producto" associationsOut="_Jv5MYA_mEfCa2eeoRS-vlw _JwJEAA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jv9d0Q_mEfCa2eeoRS-vlw" position="-746.0,461.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jv9d0g_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jv9d0w_mEfCa2eeoRS-vlw" name="codigo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlxnEQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jv9d1A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d1Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jv9d1g_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jv9d1w_mEfCa2eeoRS-vlw" name="nombre">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlyOIA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jv9d2A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d2Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jv9d2g_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jv9d2w_mEfCa2eeoRS-vlw" name="eanProducto">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlyOIQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jv9d3A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d3Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jv9d3g_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jv9d3w_mEfCa2eeoRS-vlw" name="eanBulto">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlyOIg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jv9d4A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d4Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jv9d4g_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jv9d4w_mEfCa2eeoRS-vlw" name="Producto">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbwIYA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jv9d5A_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jv9d5Q_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d5g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jv9d5w_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbwvcg_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jv9d6A_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Jv9d6Q_mEfCa2eeoRS-vlw" name="codigo">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbwIYQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d6g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9d6w_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jv9d7A_mEfCa2eeoRS-vlw" name="nombre">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbwIYg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d7Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9d7g_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jv9d7w_mEfCa2eeoRS-vlw" name="eanProducto">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbwIYw_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d8A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9d8Q_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jv9d8g_mEfCa2eeoRS-vlw" name="eanBulto">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbwIZA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d8w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9d9A_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Jv9d9Q_mEfCa2eeoRS-vlw" name="Producto">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWgA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jv9d9g_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jv9d9w_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9d-A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jv9d-Q_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWhQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jv9d-g_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Jv9d-w_mEfCa2eeoRS-vlw" name="codigo">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWgQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d_A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9d_Q_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jv9d_g_mEfCa2eeoRS-vlw" name="nombre">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWgg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jv9d_w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jv9eAA_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Jv9eAQ_mEfCa2eeoRS-vlw" name="toString">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWhg_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jv9eAg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbx9kA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Jv9eAw_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbx9kQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jv9eBA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jv9eBQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jv9eBg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbxWhw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jv9eBw_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JwELiA_mEfCa2eeoRS-vlw" comments="_JwBvQA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JwBvQQ_mEfCa2eeoRS-vlw" name="Albaran" associationsIn="_JwELgA_mEfCa2eeoRS-vlw" associationsOut="_JwCWUA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4w_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JwELiQ_mEfCa2eeoRS-vlw" position="-853.0,130.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JwELig_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JwEykA_mEfCa2eeoRS-vlw" name="numero">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlxAAA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwEykQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEykg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwEykw_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwEylA_mEfCa2eeoRS-vlw" name="fecha">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlxAAQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwEylQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEylg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwEylw_mEfCa2eeoRS-vlw" name="LocalDate">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk7SgQ_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwEymA_mEfCa2eeoRS-vlw" name="tipo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlxnEA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwEymQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEymg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwEymw_mEfCa2eeoRS-vlw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JwEynA_mEfCa2eeoRS-vlw" name="toString">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbseAA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwEynQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbtFEQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JwEyng_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbtsIA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwEynw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEyoA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwEyoQ_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbtFEA_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwEyog_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_JwEyow_mEfCa2eeoRS-vlw" name="Albaran">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodIA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwEypA_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwEypQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEypg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwEypw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodJg_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwEyqA_mEfCa2eeoRS-vlw" name="Albaran">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4w_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JwEyqQ_mEfCa2eeoRS-vlw" name="numero">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodIQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwEyqg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwEyqw_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JwEyrA_mEfCa2eeoRS-vlw" name="fecha">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodIg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwEyrQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwEyrg_mEfCa2eeoRS-vlw" name="LocalDate">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk7SgQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JwEyrw_mEfCa2eeoRS-vlw" name="tipo">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodIw_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwEysA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwEysQ_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_JwEysg_mEfCa2eeoRS-vlw" name="Albaran">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodJw_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwEysw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwEytA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwEytQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwEytg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlpEMg_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwEytw_mEfCa2eeoRS-vlw" name="Albaran">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4w_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JwEyuA_mEfCa2eeoRS-vlw" name="numero">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodKA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwEyuQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwEyug_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JwEyuw_mEfCa2eeoRS-vlw" name="fecha">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlodKQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwEyvA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwEyvQ_mEfCa2eeoRS-vlw" name="LocalDate">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk7SgQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JwK5MA_mEfCa2eeoRS-vlw" comments="_JwJrEA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JwJrEQ_mEfCa2eeoRS-vlw" name="ProductoVerificado" associationsIn="_JwJEAA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb22EA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JwK5MQ_mEfCa2eeoRS-vlw" position="-2122.0,282.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JwK5Mg_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JwK5Mw_mEfCa2eeoRS-vlw" name="productoEnAlbaran">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlzcQA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwK5NA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwK5NQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwK5Ng_mEfCa2eeoRS-vlw" name="Producto">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwK5Nw_mEfCa2eeoRS-vlw" name="cantidad">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlzcQQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwK5OA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwK5OQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwK5Og_mEfCa2eeoRS-vlw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JwK5Ow_mEfCa2eeoRS-vlw" name="toString">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb4EMA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwK5PA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb4rQA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_JwK5PQ_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb4rQQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwK5Pg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwK5Pw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwK5QA_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb4EMQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwK5QQ_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_JwK5Qg_mEfCa2eeoRS-vlw" name="ProductoVerificado">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFDgA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwK5Qw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwK5RA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwK5RQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwK5Rg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFDhQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwK5Rw_mEfCa2eeoRS-vlw" name="ProductoVerificado">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb22EA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JwK5SA_mEfCa2eeoRS-vlw" name="productoEnAlbaran">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFDgQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwK5SQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwK5Sg_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_JwK5Sw_mEfCa2eeoRS-vlw" name="cantidad">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFDgg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwK5TA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwK5TQ_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_JwK5Tg_mEfCa2eeoRS-vlw" name="ProductoVerificado">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFqkA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwK5Tw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwK5UA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwK5UQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwK5Ug_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFqlA_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwK5Uw_mEfCa2eeoRS-vlw" name="ProductoVerificado">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb22EA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_JwK5VA_mEfCa2eeoRS-vlw" name="productoEnAlbaran">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlFqkQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JwK5VQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JwK5Vg_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jwaw0A_mEfCa2eeoRS-vlw" comments="_JwZisA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JwZisQ_mEfCa2eeoRS-vlw" name="ProductoEnAlbaran" associationsIn="_Jv5MYA_mEfCa2eeoRS-vlw _JwCWUA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbykoA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jwaw0Q_mEfCa2eeoRS-vlw" position="-1852.0,-49.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jwaw0g_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jwaw0w_mEfCa2eeoRS-vlw" name="producto">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1MA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jwaw1A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw1Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jwaw1g_mEfCa2eeoRS-vlw" name="Producto">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jwaw1w_mEfCa2eeoRS-vlw" name="albaran">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1MQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jwaw2A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw2Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jwaw2g_mEfCa2eeoRS-vlw" name="Albaran">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4w_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jwaw2w_mEfCa2eeoRS-vlw" name="cantidadUnidades">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1Mg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jwaw3A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw3Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jwaw3g_mEfCa2eeoRS-vlw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jwaw3w_mEfCa2eeoRS-vlw" name="cantidadBultos">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jly1Mw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jwaw4A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw4Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jwaw4g_mEfCa2eeoRS-vlw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jwaw4w_mEfCa2eeoRS-vlw" name="toString">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb0Z0A_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jwaw5A_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb1A4A_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Jwaw5Q_mEfCa2eeoRS-vlw" name="Annotations">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb1A4Q_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jwaw5g_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw5w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jwaw6A_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb0Z0Q_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jwaw6Q_mEfCa2eeoRS-vlw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Jwaw6g_mEfCa2eeoRS-vlw" name="ProductoEnAlbaran">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlD1YA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jwaw6w_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jwaw7A_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jwaw7Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jwaw7g_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlEcdQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jwaw7w_mEfCa2eeoRS-vlw" name="ProductoEnAlbaran">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbykoA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Jwaw8A_mEfCa2eeoRS-vlw" name="producto">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlD1YQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jwaw8Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jwaw8g_mEfCa2eeoRS-vlw" name="Producto">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jbu6QA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jwaw8w_mEfCa2eeoRS-vlw" name="albaran">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlEccA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jwaw9A_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jwaw9Q_mEfCa2eeoRS-vlw" name="Albaran">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JbrP4w_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jwaw9g_mEfCa2eeoRS-vlw" name="cantidadUnidades">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlEccQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jwaw9w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jwaw-A_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Jwaw-Q_mEfCa2eeoRS-vlw" name="cantidadBultos">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlEccg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_Jwaw-g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_Jwaw-w_mEfCa2eeoRS-vlw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jwd0Ig_mEfCa2eeoRS-vlw" comments="_Jwd0IA_mEfCa2eeoRS-vlw" targetConnectionVisual="_Jwd0IQ_mEfCa2eeoRS-vlw" name="Resultado">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcLmMA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jwd0Iw_mEfCa2eeoRS-vlw" position="-449.0,369.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jwd0JA_mEfCa2eeoRS-vlw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JwfpUA_mEfCa2eeoRS-vlw" comments="_JwfCQA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JwfCQQ_mEfCa2eeoRS-vlw" name="InicialConLogo" associationsIn="_JwhegA_mEfCa2eeoRS-vlw" generalizations="_JxH7fA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb7ukA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JwfpUQ_mEfCa2eeoRS-vlw" position="558.0,575.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JwfpUg_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JwfpUw_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0DUg_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwfpVA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JwfpVQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwfpVg_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JwfpVw_mEfCa2eeoRS-vlw" name="InicialConLogo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb8VoA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwfpWA_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwfpWQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwfpWg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwfpWw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb8Vow_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwfpXA_mEfCa2eeoRS-vlw" name="InicialConLogo">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb7ukA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jwlv-Q_mEfCa2eeoRS-vlw" comments="_JwiFkA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JwiFkQ_mEfCa2eeoRS-vlw" name="JFrameMenu" associationsOut="_JwhegA_mEfCa2eeoRS-vlw _Jwkh0A_mEfCa2eeoRS-vlw _JwlI4A_mEfCa2eeoRS-vlw _JwlI6Q_mEfCa2eeoRS-vlw _Jwlv8A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcAAAA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jwlv-g_mEfCa2eeoRS-vlw" position="-530.0,714.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jwlv-w_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jwlv_A_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3GoA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jwlv_Q_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jwlv_g_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jwlv_w_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwlwAA_mEfCa2eeoRS-vlw" name="nuevoInicialConLogo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3Gog_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwlwAQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3Gow_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwlwAg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwAw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwlwBA_mEfCa2eeoRS-vlw" name="InicialConLogo">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb7ukA_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwlwBQ_mEfCa2eeoRS-vlw" name="panelIzquierdo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3GpA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwlwBg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwlwBw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwCA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwlwCQ_mEfCa2eeoRS-vlw" name="PanelIzquierdo">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcBOIg_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwlwCg_mEfCa2eeoRS-vlw" name="panelCentral">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwlwCw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwlwDA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwDQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwlwDg_mEfCa2eeoRS-vlw" name="PanelCentral">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcB1Mw_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwlwDw_mEfCa2eeoRS-vlw" name="panelNuevo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3tsw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwlwEA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3ttA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwlwEQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwEg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwlwEw_mEfCa2eeoRS-vlw" name="NuevoGUI">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcFfkA_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwlwFA_mEfCa2eeoRS-vlw" name="panelMostrarProductos">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl3ttQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwlwFQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl4UwA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwlwFg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwFw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwlwGA_mEfCa2eeoRS-vlw" name="ProductosGUI">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJJ8A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JwlwGQ_mEfCa2eeoRS-vlw" name="JFrameMenu">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcAnEA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwlwGg_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwlwGw_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwlwHA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwlwHQ_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcBOIQ_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwlwHg_mEfCa2eeoRS-vlw" name="JFrameMenu">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcAAAA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JwxWKQ_mEfCa2eeoRS-vlw" name="PanelIzquierdo" associationsIn="_Jwkh0A_mEfCa2eeoRS-vlw" associationsOut="_JwwvEA_mEfCa2eeoRS-vlw _JwxWIA_mEfCa2eeoRS-vlw" generalizations="_JxIigA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcBOIg_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JwxWKg_mEfCa2eeoRS-vlw" position="905.0,535.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JwxWKw_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JwxWLA_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl4UwQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JwxWLQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JwxWLg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwxWLw_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwxWMA_mEfCa2eeoRS-vlw" name="botonNuevo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl4Uww_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwxWMQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl4UxA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwxWMg_mEfCa2eeoRS-vlw" label="~"/>
+      <cardinality xmi:id="_JwxWMw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwxWNA_mEfCa2eeoRS-vlw" name="JButton">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt4A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JwxWNQ_mEfCa2eeoRS-vlw" name="botonProductos">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl470A_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JwxWNg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl470Q_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JwxWNw_mEfCa2eeoRS-vlw" label="~"/>
+      <cardinality xmi:id="_JwxWOA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JwxWOQ_mEfCa2eeoRS-vlw" name="JButton">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt4A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JwxWOg_mEfCa2eeoRS-vlw" name="PanelIzquierdo">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcBOIw_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JwxWOw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JwxWPA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JwxWPQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JwxWPg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcB1Mg_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JwxWPw_mEfCa2eeoRS-vlw" name="PanelIzquierdo">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcBOIg_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jw2OoA_mEfCa2eeoRS-vlw" name="PanelCentral" associationsIn="_JwlI4A_mEfCa2eeoRS-vlw" generalizations="_JxIigQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcB1Mw_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jw2OoQ_mEfCa2eeoRS-vlw" position="-2105.0,575.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jw2Oog_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jw2Oow_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl470g_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw2OpA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw2OpQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw2Opg_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jw2Opw_mEfCa2eeoRS-vlw" name="PanelCentral">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcCcQA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jw2OqA_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jw2OqQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw2Oqg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jw2Oqw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcCcQw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jw2OrA_mEfCa2eeoRS-vlw" name="PanelCentral">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcB1Mw_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jw88WQ_mEfCa2eeoRS-vlw" comments="_Jw4D0A_mEfCa2eeoRS-vlw" targetConnectionVisual="_Jw4D0Q_mEfCa2eeoRS-vlw" name="InicioDeSesion" associationsOut="_Jw4D0g_mEfCa2eeoRS-vlw _Jw6gEA_mEfCa2eeoRS-vlw _Jw7HIA_mEfCa2eeoRS-vlw _Jw7HKQ_mEfCa2eeoRS-vlw _Jw7uMA_mEfCa2eeoRS-vlw _Jw8VQA_mEfCa2eeoRS-vlw _Jw88UA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb88sA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jw88Wg_mEfCa2eeoRS-vlw" position="-1101.0,370.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jw88Ww_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jw88XA_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0qYA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jw88XQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88Xg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88Xw_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88YA_mEfCa2eeoRS-vlw" name="labelIncioSesion">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0qYg_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88YQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl0qYw_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88Yg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88Yw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88ZA_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88ZQ_mEfCa2eeoRS-vlw" name="labelUsuario">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1RcA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88Zg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1RcQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88Zw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88aA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88aQ_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88ag_mEfCa2eeoRS-vlw" name="textFieldUsuario">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1Rcg_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88aw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1Rcw_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88bA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88bQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88bg_mEfCa2eeoRS-vlw" name="JTextField">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlJU8w_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88bw_mEfCa2eeoRS-vlw" name="labelClave">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl1RdA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88cA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88cQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88cg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88cw_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88dA_mEfCa2eeoRS-vlw" name="textFieldClave">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88dQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88dg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88dw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88eA_mEfCa2eeoRS-vlw" name="JPasswordField">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlJU8Q_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88eQ_mEfCa2eeoRS-vlw" name="botonIniciarSesion">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl14gw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88eg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl2fkA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88ew_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88fA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88fQ_mEfCa2eeoRS-vlw" name="JButton">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt4A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jw88fg_mEfCa2eeoRS-vlw" name="panelUnico">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl2fkQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jw88fw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl2fkg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jw88gA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jw88gQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jw88gg_mEfCa2eeoRS-vlw" name="JPanel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcGtsA_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jw88gw_mEfCa2eeoRS-vlw" name="InicioDeSesion">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb9jwA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jw88hA_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jw88hQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jw88hg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jw88hw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb9jww_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jw88iA_mEfCa2eeoRS-vlw" name="InicioDeSesion">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jb88sA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JxOCGQ_mEfCa2eeoRS-vlw" comments="_JxCb4A_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxCb4Q_mEfCa2eeoRS-vlw" name="NuevoGUI" associationsIn="_JwlI6Q_mEfCa2eeoRS-vlw" associationsOut="_JxCb4g_mEfCa2eeoRS-vlw _JxDC8A_mEfCa2eeoRS-vlw _JxDC8Q_mEfCa2eeoRS-vlw _JxDC8g_mEfCa2eeoRS-vlw _JxDC8w_mEfCa2eeoRS-vlw _JxDC9A_mEfCa2eeoRS-vlw _JxDqAA_mEfCa2eeoRS-vlw _JxNbAA_mEfCa2eeoRS-vlw _JxNbCQ_mEfCa2eeoRS-vlw _JxOCEA_mEfCa2eeoRS-vlw" generalizations="_JxDqAQ_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcFfkA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JxOCGg_mEfCa2eeoRS-vlw" position="1280.0,295.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JxOCGw_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JxOCHA_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl5i4g_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCHQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCHg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCHw_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCIA_mEfCa2eeoRS-vlw" name="jButton1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl5i5A_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCIQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8A_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCIg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCIw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCJA_mEfCa2eeoRS-vlw" name="JButton">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt4A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCJQ_mEfCa2eeoRS-vlw" name="jButton2">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8Q_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCJg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8g_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCJw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCKA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCKQ_mEfCa2eeoRS-vlw" name="JButton">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt4A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCKg_mEfCa2eeoRS-vlw" name="jLabel1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6J8w_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCKw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCLA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCLQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCLg_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCLw_mEfCa2eeoRS-vlw" name="jLabel2">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCMA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCMQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCMg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCMw_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCNA_mEfCa2eeoRS-vlw" name="jLabel3">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xAw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCNQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xBA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCNg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCNw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCOA_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCOQ_mEfCa2eeoRS-vlw" name="jScrollPane1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl6xBQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCOg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCOw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCPA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCPQ_mEfCa2eeoRS-vlw" name="JScrollPane">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwg_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCPg_mEfCa2eeoRS-vlw" name="jScrollPane3">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCPw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCQA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCQQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCQg_mEfCa2eeoRS-vlw" name="JScrollPane">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwg_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCQw_mEfCa2eeoRS-vlw" name="jTable2">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7YEw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCRA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_IA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCRQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCRg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCRw_mEfCa2eeoRS-vlw" name="JTable">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk-V0Q_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCSA_mEfCa2eeoRS-vlw" name="jTextArea1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_IQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCSQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_Ig_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCSg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCSw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCTA_mEfCa2eeoRS-vlw" name="JTextArea">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlR30Q_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxOCTQ_mEfCa2eeoRS-vlw" name="jTextField1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_Iw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxOCTg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl7_JA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxOCTw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCUA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxOCUQ_mEfCa2eeoRS-vlw" name="JTextField">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlJU8w_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JxOCUg_mEfCa2eeoRS-vlw" comments="_JxEREA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxEREQ_mEfCa2eeoRS-vlw" name="NuevoGUI">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcGGoA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JxOCUw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JxOCVA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxOCVQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JxOCVg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcGGow_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JxOCVw_mEfCa2eeoRS-vlw" name="NuevoGUI">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcFfkA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_JxOCWA_mEfCa2eeoRS-vlw" comments="_JxEREg_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxEREw_mEfCa2eeoRS-vlw" name="initComponents">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcGGpA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCWQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCWg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_JxOCWw_mEfCa2eeoRS-vlw" name="jTextField1ActionPerformed">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlQpsQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCXA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCXQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JxOCXg_mEfCa2eeoRS-vlw" name="evt">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlQpsg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JxOCXw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JxOCYA_mEfCa2eeoRS-vlw" name="ActionEvent">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlHfwQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_JxOCYQ_mEfCa2eeoRS-vlw" name="jButton1ActionPerformed">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlQpsw_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCYg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCYw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JxOCZA_mEfCa2eeoRS-vlw" name="evt">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlQptA_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JxOCZQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JxOCZg_mEfCa2eeoRS-vlw" name="ActionEvent">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlHfwQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_JxOCZw_mEfCa2eeoRS-vlw" name="jButton2ActionPerformed">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxOCaA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxOCaQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JxOCag_mEfCa2eeoRS-vlw" name="evt">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwQ_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JxOCaw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JxOCbA_mEfCa2eeoRS-vlw" name="ActionEvent">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlHfwQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JxXzEA_mEfCa2eeoRS-vlw" comments="_JxWk8Q_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxXMAA_mEfCa2eeoRS-vlw" name="MostrarProductos" generalizations="_JxWk8A_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcERcA_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JxXzEQ_mEfCa2eeoRS-vlw" position="-935.0,716.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JxXzEg_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JxXzEw_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl5i4A_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxXzFA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxXzFQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxXzFg_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JxXzFw_mEfCa2eeoRS-vlw" name="MostrarProductos">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcE4gA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JxXzGA_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JxXzGQ_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxXzGg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JxXzGw_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcE4gw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JxXzHA_mEfCa2eeoRS-vlw" name="MostrarProductos">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcERcA_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_JxdSoA_mEfCa2eeoRS-vlw" comments="_JxZBMQ_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxZBMg_mEfCa2eeoRS-vlw" name="VerificacionGUI" associationsOut="_JxZoQA_mEfCa2eeoRS-vlw _JxZoQQ_mEfCa2eeoRS-vlw _JxZoQg_mEfCa2eeoRS-vlw _JxZoQw_mEfCa2eeoRS-vlw _JxZoRA_mEfCa2eeoRS-vlw" generalizations="_JxZBMA_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcLmMQ_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_JxdSoQ_mEfCa2eeoRS-vlw" position="-591.0,900.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_JxdSog_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_JxdSow_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90UA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxdSpA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSpQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdSpg_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxdSpw_mEfCa2eeoRS-vlw" name="jLabel1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90Ug_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxdSqA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90Uw_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxdSqQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSqg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdSqw_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxdSrA_mEfCa2eeoRS-vlw" name="jLabel2">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl90VA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxdSrQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxdSrg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSrw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdSsA_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxdSsQ_mEfCa2eeoRS-vlw" name="jScrollPane1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxdSsg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxdSsw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdStA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdStQ_mEfCa2eeoRS-vlw" name="JScrollPane">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwg_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxdStg_mEfCa2eeoRS-vlw" name="jTable1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bYw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxdStw_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl-bZA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxdSuA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSuQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdSug_mEfCa2eeoRS-vlw" name="JTable">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk-V0Q_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_JxdSuw_mEfCa2eeoRS-vlw" name="ean_leido_textField">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl_CcA_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_JxdSvA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl_CcQ_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_JxdSvQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSvg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_JxdSvw_mEfCa2eeoRS-vlw" name="JTextField">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlJU8w_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_JxdSwA_mEfCa2eeoRS-vlw" comments="_JxZoRQ_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxZoRg_mEfCa2eeoRS-vlw" name="VerificacionGUI">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcMNQA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_JxdSwQ_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_JxdSwg_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_JxdSww_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_JxdSxA_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcMNQw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_JxdSxQ_mEfCa2eeoRS-vlw" name="VerificacionGUI">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcLmMQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_JxdSxg_mEfCa2eeoRS-vlw" comments="_JxaPUA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxaPUQ_mEfCa2eeoRS-vlw" name="initComponents">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcMNRA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxdSxw_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSyA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_JxdSyQ_mEfCa2eeoRS-vlw" name="jTextField1ActionPerformed">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlViMQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxdSyg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdSyw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JxdSzA_mEfCa2eeoRS-vlw" name="evt">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlViMg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JxdSzQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JxdSzg_mEfCa2eeoRS-vlw" name="ActionEvent">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlHfwQ_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_JxdSzw_mEfCa2eeoRS-vlw" name="jTextField1KeyPressed">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlWJQQ_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_JxdS0A_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_JxdS0Q_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_JxdS0g_mEfCa2eeoRS-vlw" name="evt">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlWJQg_mEfCa2eeoRS-vlw"/>
+        <cardinality xmi:id="_JxdS0w_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+        <type xmi:id="_JxdS1A_mEfCa2eeoRS-vlw" name="KeyEvent">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlViMw_mEfCa2eeoRS-vlw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Jxg9AA_mEfCa2eeoRS-vlw" comments="_JxKXsA_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxKXsQ_mEfCa2eeoRS-vlw" name="ProductosGUI" associationsIn="_Jwlv8A_mEfCa2eeoRS-vlw" associationsOut="_JxK-wA_mEfCa2eeoRS-vlw _JxK-wQ_mEfCa2eeoRS-vlw _JxK-wg_mEfCa2eeoRS-vlw" generalizations="_JxH7ew_mEfCa2eeoRS-vlw">
+    <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJJ8A_mEfCa2eeoRS-vlw"/>
+    <visualProperties xmi:id="_Jxg9AQ_mEfCa2eeoRS-vlw" position="-2441.0,495.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Jxg9Ag_mEfCa2eeoRS-vlw" label="+"/>
+    <attributes xmi:id="_Jxg9Aw_mEfCa2eeoRS-vlw" defaultValue="1L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl8mMA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jxg9BA_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jxg9BQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jxg9Bg_mEfCa2eeoRS-vlw" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jxg9Bw_mEfCa2eeoRS-vlw" name="jLabel1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl8mMg_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jxg9CA_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jxg9CQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jxg9Cg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jxg9Cw_mEfCa2eeoRS-vlw" name="JLabel">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlIt5A_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jxg9DA_mEfCa2eeoRS-vlw" name="jScrollPane1">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQQ_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jxg9DQ_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQg_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jxg9Dg_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jxg9Dw_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jxg9EA_mEfCa2eeoRS-vlw" name="JScrollPane">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JlRQwg_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Jxg9EQ_mEfCa2eeoRS-vlw" name="table">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NQw_mEfCa2eeoRS-vlw"/>
+      <stereotypes xmi:id="_Jxg9Eg_mEfCa2eeoRS-vlw" name="LegacyStyledElement">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jl9NRA_mEfCa2eeoRS-vlw"/>
+      </stereotypes>
+      <visibility xmi:id="_Jxg9Ew_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jxg9FA_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <type xmi:id="_Jxg9FQ_mEfCa2eeoRS-vlw" name="JTable">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_Jk-V0Q_mEfCa2eeoRS-vlw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Jxg9Fg_mEfCa2eeoRS-vlw" comments="_JxK-ww_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxK-xA_mEfCa2eeoRS-vlw" name="ProductosGUI">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJxAA_mEfCa2eeoRS-vlw"/>
+      <keywords xmi:id="_Jxg9Fw_mEfCa2eeoRS-vlw" keyword="create"/>
+      <visibility xmi:id="_Jxg9GA_mEfCa2eeoRS-vlw" label="+"/>
+      <cardinality xmi:id="_Jxg9GQ_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Jxg9Gg_mEfCa2eeoRS-vlw">
+        <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJxAw_mEfCa2eeoRS-vlw"/>
+        <type xmi:id="_Jxg9Gw_mEfCa2eeoRS-vlw" name="ProductosGUI">
+          <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJJ8A_mEfCa2eeoRS-vlw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Jxg9HA_mEfCa2eeoRS-vlw" comments="_JxK-xQ_mEfCa2eeoRS-vlw" targetConnectionVisual="_JxK-xg_mEfCa2eeoRS-vlw" name="initComponents">
+      <modelElement href="V0.1-JAVA-Swing-sin-FrameWorks-sin-BasedeDatos.uml#_JcJxBA_mEfCa2eeoRS-vlw"/>
+      <visibility xmi:id="_Jxg9HQ_mEfCa2eeoRS-vlw" label="-"/>
+      <cardinality xmi:id="_Jxg9Hg_mEfCa2eeoRS-vlw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
