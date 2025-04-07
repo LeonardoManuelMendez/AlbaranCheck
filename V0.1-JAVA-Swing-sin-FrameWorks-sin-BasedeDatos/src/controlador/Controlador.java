@@ -135,7 +135,7 @@ public class Controlador {
 
 	public static List<Producto> obtenerListaProductos() {
 
-		File archivotxt = new File("./src/ficheros/productos.txt");
+		File archivotxt = new File("./src/ficheros/productos.dat");
 		List<Producto> listaProductos = new ArrayList<>();
 		String codigo_t;
 		String nombre_t;
