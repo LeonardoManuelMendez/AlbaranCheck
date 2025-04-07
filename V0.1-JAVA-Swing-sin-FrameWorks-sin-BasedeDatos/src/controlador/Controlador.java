@@ -140,7 +140,7 @@ public class Controlador {
 		String codigo_t;
 		String nombre_t;
 		String eanBulto_t; 
-		String eanProducto_t;
+		String eanProducto_t; 
 
 		String regex1 = "^(\\d{1,6})\\s{3,}(.{0,32})\\s*(\\d*)\\s*(\\d*)\\s*$"; // Expresión regular
 
