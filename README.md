@@ -87,7 +87,7 @@ Esta versión inicial (V 0.1) tiene un alcance limitado:
 
 ### Diseño
 #### Diagrama de clases (UML) en PlantUML:  
-<img src="clasesv01.png" alt="Diagrama de clases V 0.1" style="display: block; margin: 0 auto;">
+<img src="Imagenes/clasesv01.png" alt="Diagrama de clases V 0.1" style="display: block; margin: 0 auto;">
 
 ### Descripción de la estructura del código y los componentes principales.
 - **Main**: Clase principal que inicia la aplicación y crea una instancia de la interfaz gráfica (GUI).
