@@ -71,6 +71,8 @@ Esta versión inicial (V 0.1) tiene un alcance limitado:
 - **RF.03**: Escaneo de códigos de barras.
 - **RF.04**: Verificación de recepción.
 - **RF.05**: Generación de informe de recepción.
+- **RF.06**: Crear nuevos productos y modificar los existentes.
+- **RF.07**: Mostrar lista de productos.
 
 #### Requisitos No Funcionales
 - **RNF.01**: Interfaz intuitiva y fácil de usar.
@@ -83,7 +85,8 @@ Esta versión inicial (V 0.1) tiene un alcance limitado:
 3. **CU.03**: Escanear producto.
 4. **CU.04**: Verificar recepción.
 5. **CU.05**: Generar informe.
-6. **CU.06**: Exportar informe.
+6. **CU.06**: Crear/Modificar producto.
+7. **CU.07**: Mostrar lista de productos.
 
 ### Diseño
 #### Diagrama de clases (UML) en PlantUML:  
@@ -94,9 +97,8 @@ Esta versión inicial (V 0.1) tiene un alcance limitado:
 - **GUI**: Clase encargada de la interfaz de usuario, que incluye ventanas para cargar el albarán, escanear códigos de barras y mostrar el informe. Interactúa con el usuario y delega las operaciones al Controlador.
 - **Controlador**: Clase que actúa como intermediario entre la interfaz gráfica y la lógica del negocio. Gestiona la carga de albaranes, el escaneo de productos y la generación de informes.
 - **Albarán**: Clase que representa un albarán con sus atributos (número, fecha, proveedor y lista de productos esperados).
-- **ProductoEnAlbarán**: Clase que asocia un producto con la cantidad esperada en un albarán específico.
+- **ProductoEnAlbarán**: Clase que asocia un producto con la cantidad esperada en un albarán específico. 
 - **Producto**: Clase que contiene la información básica de un producto (código de barras y descripción).
-- **ProductoVerificado**: Clase que registra los productos escaneados, asociándolos a un albarán y registrando la cantidad recibida.
 
 El flujo de datos comienza en la GUI, pasa al Controlador para procesar la lógica, y utiliza las clases de modelo (Albarán, Producto, etc.) para estructurar la información.
 
@@ -108,14 +110,14 @@ El flujo de datos comienza en la GUI, pasa al Controlador para procesar la lógi
   - Utiliza la biblioteca Swing de Java para crear una interfaz gráfica básica.
   - Incluye un botón para cargar el archivo PDF del albarán, un campo de texto para introducir códigos de barras manualmente o mediante un lector, y un área de texto para mostrar el informe.
 - **Controlador**: Gestiona la lógica principal utilizando métodos para cada una de las acciones necesarias.
-- **Albarán, ProductoEnAlbarán, Producto, ProductoVerificado**: Clases POJO (Plain Old Java Objects) con constructores, getters y setters.
+- **Albarán, ProductoEnAlbarán, Producto**: Clases POJO (Plain Old Java Objects) con constructores, getters y setters.
 
 #### Librerías y herramientas utilizadas
 - **Java SE (Standard Edition)**: Versión 8 o superior, utilizada como base para el desarrollo.
 - **Swing**: Biblioteca nativa de Java para la creación de la interfaz gráfica.
 - **Apache PDFBox**: Para la lectura de los albaranes en formato PDF.
 - **Eclipse/IntelliJ IDEA**: Entorno de desarrollo integrado (IDE) utilizado para escribir, depurar y compilar el código.
-- **Archivo .dat**: Usado como sustituto temporal para simular la carga de datos de albaranes y productos.
+- **Archivo .dat**: Usado como sustituto temporal para simular la carga de datos de productos.
 
 En esta versión, se evitó el uso de frameworks para mantener la simplicidad y centrarse en la lógica básica.
 
@@ -123,18 +125,20 @@ En esta versión, se evitó el uso de frameworks para mantener la simplicidad y 
 
 #### Pruebas unitarias y de integración realizadas
 - **Pruebas unitarias**:
-  - **Carga de albarán**: Se probó la capacidad del sistema para cargar un archivo `.dat` con datos simulados de un albarán y mostrarlos en la GUI.
+  - **Carga de albarán**: Se probó la capacidad del sistema para cargar un archivo PDF con un albarán y mostrarlos en la GUI.
   - **Escaneo de productos**: Se simularon escaneos de códigos de barras válidos e inválidos para verificar que el sistema los registra correctamente.
   - **Generación de informe**: Se comprobó que el informe refleja correctamente los productos escaneados y faltantes.
+  - **Carga de productos**: Se verificó que el sistema puede cargar y mostrar la lista de productos desde el archivo `.dat`.
 - **Pruebas de integración**:
   - Se verificó que la GUI interactúa correctamente con el Controlador al cargar un albarán y escanear productos.
   - Se probó el flujo completo: cargar albarán → escanear productos → generar informe.
 
 #### Resultados de las pruebas y análisis de rendimiento
 - **Resultados**:
-  - La carga de datos desde el archivo `.dat` fue exitosa en el 100% de los casos probados (10 albaranes simulados).
-  - El escaneo de productos identificó correctamente los productos recibidos y faltantes en un 95% de las pruebas (fallos menores por entrada manual incorrecta).
+  - La carga de datos desde el archivo `.dat` fue exitosa en el 100% de los casos probados.
+  - El escaneo de productos identificó correctamente los productos recibidos y faltantes.
   - El informe se generó correctamente, mostrando discrepancias en todos los casos probados.
+  - Se crearon y modificaron productos sin errores.
 - **Rendimiento**:
   - Tiempo promedio de carga de un albarán: 0.5 segundos.
   - Tiempo de procesamiento por escaneo: <0.1 segundos.
