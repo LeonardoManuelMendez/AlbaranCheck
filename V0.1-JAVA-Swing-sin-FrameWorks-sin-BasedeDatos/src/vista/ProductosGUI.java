@@ -4,6 +4,8 @@ import controlador.Controlador;
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ProductosGUI extends javax.swing.JPanel {
     private static final long serialVersionUID = 1L;
@@ -33,6 +35,12 @@ public class ProductosGUI extends javax.swing.JPanel {
         }
         
         JButton botonIngresarNuevoP = new JButton("Ingresar Nuevo Producto");
+        botonIngresarNuevoP.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		EditarCrearProductos editarCrearProductos = new EditarCrearProductos();
+				editarCrearProductos.setVisible(true);
+        	}
+        });
 
         GroupLayout layout = new GroupLayout(this);
         layout.setHorizontalGroup(

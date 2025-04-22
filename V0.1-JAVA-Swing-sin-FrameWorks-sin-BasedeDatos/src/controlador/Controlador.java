@@ -138,7 +138,17 @@ public class Controlador {
 	}
 
     public static List<Producto> obtenerListaProductos() {
+    	// leer el archivo y si no existe se crea vacio
         File archivotxt = new File("./src/ficheros/productos.dat");
+        if (!archivotxt.exists()) {
+			try {
+				archivotxt.createNewFile();
+			} catch (IOException e) {
+				// Manejo de excepciones al crear el archivo
+				JOptionPane.showMessageDialog(null, "Error al crear el archivo: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+				System.err.println("Error al crear el archivo: " + e.getMessage());
+			}
+		}
         List<Producto> listaProductos = new ArrayList<>();
         String codigo_t;
         String nombre_t;
@@ -163,6 +173,10 @@ public class Controlador {
         } catch (IOException e) {
             System.err.println("Error al leer el archivo: " + e.getMessage());
         }
+        // Si la lista está vacía, se informa al usuario
+        if (listaProductos.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "No existen productos guardados", "Alerta", JOptionPane.WARNING_MESSAGE);
+		}
         return listaProductos;
     }
 
@@ -196,9 +210,7 @@ public class Controlador {
                                 modelo.removeRow(fila);
                                 break;
                             case "Actualizar":
-                                Producto producto = listaProductos.get(fila);
-                                EditarProductoDialog dialog = new EditarProductoDialog(null, producto, listaProductos, modelo, fila);
-                                dialog.setVisible(true);
+
                                 break;
                         }
                     }
@@ -253,7 +265,7 @@ public class Controlador {
 
 	public static void actualizarArchivoProductos() {
 		List<Producto> listaProductos = obtenerListaProductos();
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("./src/ficheros/productos.txt"))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("./src/ficheros/productos.dat"))) {
 			for (Producto producto : listaProductos) {
 				bw.write(producto.getCodigo() + "   " + producto.getNombre() + "   " + producto.getEanProducto() + "   " + producto.getEanBulto());
 				bw.newLine();
@@ -263,98 +275,19 @@ public class Controlador {
 		}
 	}
 	
-	static class EditarProductoDialog extends JDialog {
-        private JTextField txtCodigo, txtNombre, txtEanUnidad, txtEanBulto;
+	static class EditarProductoDialog {
+        private static final long serialVersionUID = 1L;
+		private JTextField txtCodigo, txtNombre, txtEanUnidad, txtEanBulto;
         private Producto producto;
         private List<Producto> listaProductos;
         private DefaultTableModel modelo;
         private int fila;
 
-        public EditarProductoDialog(JFrame parent, Producto producto, List<Producto> listaProductos, DefaultTableModel modelo, int fila) {
-            super(parent, "Editar Producto", true); // Modal: bloquea la ventana padre
+        public EditarProductoDialog(Producto producto, List<Producto> listaProductos, DefaultTableModel modelo, int fila) {
             this.producto = producto;
             this.listaProductos = listaProductos;
             this.modelo = modelo;
             this.fila = fila;
-
-            initComponents();
-            cargarDatos();
-
-            setResizable(false); // No redimensionable
-            pack(); // Ajusta el tamaño al contenido
-            setLocationRelativeTo(null); // Centrar en la pantalla
-        }
-
-        private void initComponents() {
-            // Usar GridBagLayout para control preciso
-            setLayout(new GridBagLayout());
-            GridBagConstraints gbc = new GridBagConstraints();
-            gbc.insets = new Insets(5, 5, 5, 5); // Espaciado entre componentes
-
-            // JLabel y JTextField para Código
-            gbc.gridx = 0;
-            gbc.gridy = 0;
-            gbc.anchor = GridBagConstraints.EAST;
-            add(new JLabel("Código:"), gbc);
-
-            gbc.gridx = 1;
-            gbc.gridy = 0;
-            gbc.anchor = GridBagConstraints.WEST;
-            txtCodigo = new JTextField(10);
-            txtCodigo.setEnabled(false); // No editable
-            add(txtCodigo, gbc);
-
-            // JLabel y JTextField para Nombre
-            gbc.gridx = 0;
-            gbc.gridy = 1;
-            gbc.anchor = GridBagConstraints.EAST;
-            add(new JLabel("Nombre:"), gbc);
-
-            gbc.gridx = 1;
-            gbc.gridy = 1;
-            gbc.anchor = GridBagConstraints.WEST;
-            txtNombre = new JTextField(30);
-            add(txtNombre, gbc);
-
-            // JLabel y JTextField para EAN Unidad
-            gbc.gridx = 0;
-            gbc.gridy = 2;
-            gbc.anchor = GridBagConstraints.EAST;
-            add(new JLabel("EAN Unidad:"), gbc);
-
-            gbc.gridx = 1;
-            gbc.gridy = 2;
-            gbc.anchor = GridBagConstraints.WEST;
-            txtEanUnidad = new JTextField(15);
-            add(txtEanUnidad, gbc);
-
-            // JLabel y JTextField para EAN Bulto
-            gbc.gridx = 0;
-            gbc.gridy = 3;
-            gbc.anchor = GridBagConstraints.EAST;
-            add(new JLabel("EAN Bulto:"), gbc);
-
-            gbc.gridx = 1;
-            gbc.gridy = 3;
-            gbc.anchor = GridBagConstraints.WEST;
-            txtEanBulto = new JTextField(15);
-            add(txtEanBulto, gbc);
-
-            // Botones
-            gbc.gridx = 0;
-            gbc.gridy = 4;
-            gbc.anchor = GridBagConstraints.CENTER;
-            gbc.gridwidth = 1;
-            JButton btnGuardar = new JButton("Guardar");
-            btnGuardar.addActionListener(e -> guardarCambios());
-            add(btnGuardar, gbc);
-
-            gbc.gridx = 1;
-            gbc.gridy = 4;
-            gbc.anchor = GridBagConstraints.CENTER;
-            JButton btnCancelar = new JButton("Cancelar");
-            btnCancelar.addActionListener(e -> dispose());
-            add(btnCancelar, gbc);
         }
 
         private void cargarDatos() {
@@ -378,7 +311,6 @@ public class Controlador {
 
             // Guardar en el archivo
             actualizarListadoProductos(listaProductos);
-            dispose();
         }
     }
 

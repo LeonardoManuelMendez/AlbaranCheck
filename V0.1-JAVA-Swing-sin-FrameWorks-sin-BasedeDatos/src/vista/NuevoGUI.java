@@ -50,13 +50,13 @@ public class NuevoGUI extends javax.swing.JPanel {
 
 		jLabel1 = new javax.swing.JLabel();
 		jTextField1 = new javax.swing.JTextField();
-		jButton1 = new javax.swing.JButton();
+		botonSeleccionar = new javax.swing.JButton();
 		jLabel2 = new javax.swing.JLabel();
 		jScrollPane1 = new javax.swing.JScrollPane();
 		jTextArea1 = new javax.swing.JTextArea();
 		jLabel3 = new javax.swing.JLabel();
 		jScrollPane3 = new javax.swing.JScrollPane();
-		jTable2 = new javax.swing.JTable();
+		jTableListado = new javax.swing.JTable();
 
 		jLabel1.setText("Seleccionar Albarán:");
 
@@ -68,8 +68,8 @@ public class NuevoGUI extends javax.swing.JPanel {
 			}
 		});
 
-		jButton1.setText("Seleccionar");
-		jButton1.addActionListener(new java.awt.event.ActionListener() {
+		botonSeleccionar.setText("Seleccionar");
+		botonSeleccionar.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				jButton1ActionPerformed(evt);
 			}
@@ -84,10 +84,8 @@ public class NuevoGUI extends javax.swing.JPanel {
 		jLabel3.setText("Articulos");
 
 		// Crear la tabla con el modelo de datos
-		jTable2.setModel(new javax.swing.table.DefaultTableModel(
-				new Object[][] { { null, null, null, null, "" }, { null, null, null, null, null },
-						{ null, null, null, null, null }, { null, null, null, null, null },
-						{ null, null, null, null, null } },
+		jTableListado.setModel(new javax.swing.table.DefaultTableModel(
+				new Object[][] { { null, null, null, null, "" }, { null, null, null, null, null } },
 				new String[] { "Código", "Nombre", "Unidades", "Bultos", "Opciones" }) {
 			private static final long serialVersionUID = 1L;
 			boolean[] canEdit = new boolean[] { false, false, false, false, true };
@@ -97,14 +95,14 @@ public class NuevoGUI extends javax.swing.JPanel {
 			}
 		});
 		// Establecer el tamaño de las columnas
-		jScrollPane3.setViewportView(jTable2);
-		if (jTable2.getColumnModel().getColumnCount() > 0) {
-			jTable2.getColumnModel().getColumn(0).setPreferredWidth(40);
-			jTable2.getColumnModel().getColumn(1).setPreferredWidth(80);
-			jTable2.getColumnModel().getColumn(4).setPreferredWidth(40);
+		jScrollPane3.setViewportView(jTableListado);
+		if (jTableListado.getColumnModel().getColumnCount() > 0) {
+			jTableListado.getColumnModel().getColumn(0).setPreferredWidth(40);
+			jTableListado.getColumnModel().getColumn(1).setPreferredWidth(80);
+			jTableListado.getColumnModel().getColumn(4).setPreferredWidth(40);
 		}
 		
-		JButton btnVerificar = new JButton("Verificar.");
+		JButton btnVerificar = new JButton("Verificar");
 		btnVerificar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				accionBotonVerificar(e);
@@ -129,7 +127,7 @@ public class NuevoGUI extends javax.swing.JPanel {
 									.addPreferredGap(ComponentPlacement.UNRELATED)
 									.addComponent(jTextField1, GroupLayout.PREFERRED_SIZE, 377, GroupLayout.PREFERRED_SIZE)
 									.addPreferredGap(ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-									.addComponent(jButton1))
+									.addComponent(botonSeleccionar))
 								.addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE)
 								.addComponent(jScrollPane3, GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE))))
 					.addGap(39))
@@ -141,7 +139,7 @@ public class NuevoGUI extends javax.swing.JPanel {
 					.addGroup(layout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(jLabel1)
 						.addComponent(jTextField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(jButton1))
+						.addComponent(botonSeleccionar))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(jLabel2)
 					.addPreferredGap(ComponentPlacement.RELATED)
@@ -179,33 +177,33 @@ public class NuevoGUI extends javax.swing.JPanel {
 			jTextArea1.append("\n" + "Fecha: " + albaran.getFecha());
 
 			// Limpiar la tabla antes de insertar nuevos datos
-			for (int i = 0; i < jTable2.getRowCount(); i++) {
-				for (int j = 0; j < jTable2.getColumnCount(); j++) {
-					jTable2.setValueAt("", i, j);
+			for (int i = 0; i < jTableListado.getRowCount(); i++) {
+				for (int j = 0; j < jTableListado.getColumnCount(); j++) {
+					jTableListado.setValueAt("", i, j);
 				}
 			}
 
-			DefaultTableModel model = (DefaultTableModel) jTable2.getModel(); // Obtener el modelo de la tabla
+			DefaultTableModel model = (DefaultTableModel) jTableListado.getModel(); // Obtener el modelo de la tabla
 
 			// Insertar los datos en las celdas, agregando filas si es necesario
 			for (int i = 0; i < paraTabla.size(); i++) {
 				ProductoEnAlbaran producto = paraTabla.get(i);
 
-				if (i >= jTable2.getRowCount()) {
-					model.addRow(new Object[jTable2.getColumnCount()]); // Agregar una nueva fila vacía
+				if (i >= jTableListado.getRowCount()) {
+					model.addRow(new Object[jTableListado.getColumnCount()]); // Agregar una nueva fila vacía
 				}
 
-				jTable2.setValueAt(producto.getProducto().getCodigo(), i, 0);
-				jTable2.setValueAt(producto.getProducto().getNombre(), i, 1);
-				jTable2.setValueAt(producto.getBultos_esperados(), i, 2);
-				jTable2.setValueAt(producto.getUnidades_esperadas(), i, 3);
+				jTableListado.setValueAt(producto.getProducto().getCodigo(), i, 0);
+				jTableListado.setValueAt(producto.getProducto().getNombre(), i, 1);
+				jTableListado.setValueAt(producto.getBultos_esperados(), i, 2);
+				jTableListado.setValueAt(producto.getUnidades_esperadas(), i, 3);
 			}
 
 			// Configurar el JComboBox como editor
 			JComboBox<String> comboBox = new JComboBox<>(new String[] { "", "Borrar", "Actualizar" });
 			comboBox.setSelectedIndex(-1); // Asegura que no haya selección inicial
 			comboBox.addActionListener(e -> {
-				int fila = jTable2.getSelectedRow();
+				int fila = jTableListado.getSelectedRow();
 				if (fila >= 0) {
 					String opcion = (String) comboBox.getSelectedItem();
 					if (opcion != null && !opcion.isEmpty()) { // Ignorar si es la opción vacía
@@ -216,6 +214,7 @@ public class NuevoGUI extends javax.swing.JPanel {
 
 							break;
 						case "Actualizar":
+							
 
 							break;
 						}
@@ -223,7 +222,7 @@ public class NuevoGUI extends javax.swing.JPanel {
 				}
 			});
 
-			TableColumn columnaOpciones = jTable2.getColumnModel().getColumn(4);
+			TableColumn columnaOpciones = jTableListado.getColumnModel().getColumn(4);
 			columnaOpciones.setCellEditor(new DefaultCellEditor(comboBox));
 			columnaOpciones.setCellRenderer(new ComboBoxRenderer());
 		}
@@ -272,13 +271,13 @@ public class NuevoGUI extends javax.swing.JPanel {
 	}// GEN-LAST:event_jButton2ActionPerformed
 
 	// Variables declaration - do not modify//GEN-BEGIN:variables
-	private javax.swing.JButton jButton1;
+	private javax.swing.JButton botonSeleccionar;
 	private javax.swing.JLabel jLabel1;
 	private javax.swing.JLabel jLabel2;
 	private javax.swing.JLabel jLabel3;
 	private javax.swing.JScrollPane jScrollPane1;
 	private javax.swing.JScrollPane jScrollPane3;
-	private javax.swing.JTable jTable2;
+	private javax.swing.JTable jTableListado;
 	private javax.swing.JTextArea jTextArea1;
 	private javax.swing.JTextField jTextField1;
 }
