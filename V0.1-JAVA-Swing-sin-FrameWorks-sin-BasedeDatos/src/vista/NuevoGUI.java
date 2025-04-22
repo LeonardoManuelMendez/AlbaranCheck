@@ -3,7 +3,6 @@ package vista;
 import modelo.*;
 import controlador.*;
 
-
 import java.io.File;
 import java.util.List;
 
@@ -16,6 +15,12 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  *
@@ -52,7 +57,6 @@ public class NuevoGUI extends javax.swing.JPanel {
 		jLabel3 = new javax.swing.JLabel();
 		jScrollPane3 = new javax.swing.JScrollPane();
 		jTable2 = new javax.swing.JTable();
-		jButton2 = new javax.swing.JButton();
 
 		jLabel1.setText("Seleccionar Albarán:");
 
@@ -99,51 +103,59 @@ public class NuevoGUI extends javax.swing.JPanel {
 			jTable2.getColumnModel().getColumn(1).setPreferredWidth(80);
 			jTable2.getColumnModel().getColumn(4).setPreferredWidth(40);
 		}
-
-		jButton2.setText("Verificar");
-		jButton2.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent evt) {
-				jButton2ActionPerformed(evt);
+		
+		JButton btnVerificar = new JButton("Verificar.");
+		btnVerificar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				accionBotonVerificar(e);
 			}
 		});
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-		this.setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(layout
-				.createSequentialGroup().addGap(19, 19, 19)
-				.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(layout.createSequentialGroup().addComponent(jLabel3).addGap(0, 0, Short.MAX_VALUE))
-						.addGroup(layout.createSequentialGroup().addComponent(jLabel2)
-								.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-						.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-								.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-										.addGroup(layout.createSequentialGroup().addGap(0, 0, Short.MAX_VALUE)
-												.addComponent(jButton2))
-										.addComponent(jScrollPane1)
-										.addGroup(layout.createSequentialGroup().addComponent(jLabel1)
-												.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-												.addComponent(jTextField1)
-												.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-												.addComponent(jButton1))
-										.addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 861,
-												Short.MAX_VALUE))
-								.addGap(39, 39, 39)))));
-		layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGroup(layout
-				.createSequentialGroup().addGap(12, 12, 12)
-				.addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE).addComponent(jLabel1)
-						.addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE,
-								javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+		layout.setHorizontalGroup(
+			layout.createParallelGroup(Alignment.TRAILING)
+				.addGroup(layout.createSequentialGroup()
+					.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+						.addGroup(layout.createSequentialGroup()
+							.addContainerGap()
+							.addComponent(btnVerificar))
+						.addGroup(layout.createSequentialGroup()
+							.addGap(19)
+							.addGroup(layout.createParallelGroup(Alignment.LEADING)
+								.addComponent(jLabel3)
+								.addComponent(jLabel2)
+								.addGroup(layout.createSequentialGroup()
+									.addComponent(jLabel1)
+									.addPreferredGap(ComponentPlacement.UNRELATED)
+									.addComponent(jTextField1, GroupLayout.PREFERRED_SIZE, 377, GroupLayout.PREFERRED_SIZE)
+									.addPreferredGap(ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+									.addComponent(jButton1))
+								.addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE)
+								.addComponent(jScrollPane3, GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE))))
+					.addGap(39))
+		);
+		layout.setVerticalGroup(
+			layout.createParallelGroup(Alignment.LEADING)
+				.addGroup(layout.createSequentialGroup()
+					.addGap(12)
+					.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+						.addComponent(jLabel1)
+						.addComponent(jTextField1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(jButton1))
-				.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED).addComponent(jLabel2)
-				.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-				.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 88,
-						javax.swing.GroupLayout.PREFERRED_SIZE)
-				.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jLabel3)
-				.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-				.addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE,
-						javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-				.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED).addComponent(jButton2)
-				.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(jLabel2)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(jScrollPane1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(jLabel3)
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(jScrollPane3, GroupLayout.DEFAULT_SIZE, 270, Short.MAX_VALUE)
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(btnVerificar)
+					.addContainerGap())
+		);
+
+		this.setLayout(layout);
 	}// </editor-fold>//GEN-END:initComponents
 
 	private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextField1ActionPerformed
@@ -185,66 +197,62 @@ public class NuevoGUI extends javax.swing.JPanel {
 
 				jTable2.setValueAt(producto.getProducto().getCodigo(), i, 0);
 				jTable2.setValueAt(producto.getProducto().getNombre(), i, 1);
-				jTable2.setValueAt(producto.getCantidadBultos(), i, 2);
-				jTable2.setValueAt(producto.getCantidadUnidades(), i, 3);
+				jTable2.setValueAt(producto.getBultos_esperados(), i, 2);
+				jTable2.setValueAt(producto.getUnidades_esperadas(), i, 3);
 			}
-			
-			
-			
+
 			// Configurar el JComboBox como editor
-            JComboBox<String> comboBox = new JComboBox<>(new String[]{"", "Borrar", "Actualizar"});
-            comboBox.setSelectedIndex(-1); // Asegura que no haya selección inicial
-            comboBox.addActionListener(e -> {
-                int fila = jTable2.getSelectedRow();
-                if (fila >= 0) {
-                    String opcion = (String) comboBox.getSelectedItem();
-                    if (opcion != null && !opcion.isEmpty()) { // Ignorar si es la opción vacía
-                        String codigo = (String) model.getValueAt(fila, 0);
-                        System.out.println("Fila: " + fila + ", Código: " + codigo + ", Opción: " + opcion);
-                        switch (opcion) {
-                        	case "Borrar":
+			JComboBox<String> comboBox = new JComboBox<>(new String[] { "", "Borrar", "Actualizar" });
+			comboBox.setSelectedIndex(-1); // Asegura que no haya selección inicial
+			comboBox.addActionListener(e -> {
+				int fila = jTable2.getSelectedRow();
+				if (fila >= 0) {
+					String opcion = (String) comboBox.getSelectedItem();
+					if (opcion != null && !opcion.isEmpty()) { // Ignorar si es la opción vacía
+						String codigo = (String) model.getValueAt(fila, 0);
+						System.out.println("Fila: " + fila + ", Código: " + codigo + ", Opción: " + opcion);
+						switch (opcion) {
+						case "Borrar":
 
-                                break;
-                            case "Actualizar":
+							break;
+						case "Actualizar":
 
-                                break;
-                        }
-                    }
-                }
-            });
+							break;
+						}
+					}
+				}
+			});
 
-            TableColumn columnaOpciones = jTable2.getColumnModel().getColumn(4);
-            columnaOpciones.setCellEditor(new DefaultCellEditor(comboBox));
-            columnaOpciones.setCellRenderer(new ComboBoxRenderer());
+			TableColumn columnaOpciones = jTable2.getColumnModel().getColumn(4);
+			columnaOpciones.setCellEditor(new DefaultCellEditor(comboBox));
+			columnaOpciones.setCellRenderer(new ComboBoxRenderer());
 		}
-		
-		
 
 	}// GEN-LAST:event_jButton1ActionPerformed
-	
+
 	static class ComboBoxRenderer extends JComboBox<String> implements TableCellRenderer {
-        private static final long serialVersionUID = 1L;
+		private static final long serialVersionUID = 1L;
 
-        public ComboBoxRenderer() {
-            super(new String[]{"", "Borrar", "Actualizar"});
-        }
+		public ComboBoxRenderer() {
+			super(new String[] { "", "Borrar", "Actualizar" });
+		}
 
-        @Override
-        public java.awt.Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
-                                                               boolean hasFocus, int row, int column) {
-            setSelectedItem(value);
-            if (isSelected) {
-                setBackground(table.getSelectionBackground());
-                setForeground(table.getSelectionForeground());
-            } else {
-                setBackground(table.getBackground());
-                setForeground(table.getForeground());
-            }
-            return this;
-        }
-    }
+		@Override
+		public java.awt.Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+				boolean hasFocus, int row, int column) {
+			setSelectedItem(value);
+			if (isSelected) {
+				setBackground(table.getSelectionBackground());
+				setForeground(table.getSelectionForeground());
+			} else {
+				setBackground(table.getBackground());
+				setForeground(table.getForeground());
+			}
+			return this;
+		}
+	}
 
-	private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
+	private void accionBotonVerificar(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
 
 		// Obtener el contenedor del JPanel actual
 		JPanel contenedor = (JPanel) this.getParent();
@@ -265,7 +273,6 @@ public class NuevoGUI extends javax.swing.JPanel {
 
 	// Variables declaration - do not modify//GEN-BEGIN:variables
 	private javax.swing.JButton jButton1;
-	private javax.swing.JButton jButton2;
 	private javax.swing.JLabel jLabel1;
 	private javax.swing.JLabel jLabel2;
 	private javax.swing.JLabel jLabel3;
@@ -274,5 +281,4 @@ public class NuevoGUI extends javax.swing.JPanel {
 	private javax.swing.JTable jTable2;
 	private javax.swing.JTextArea jTextArea1;
 	private javax.swing.JTextField jTextField1;
-	// End of variables declaration//GEN-END:variables
 }

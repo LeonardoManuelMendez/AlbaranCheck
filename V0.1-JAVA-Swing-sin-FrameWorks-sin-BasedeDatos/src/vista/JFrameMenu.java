@@ -55,8 +55,8 @@ public class JFrameMenu extends JFrame {
         JButton botonProductos;
 
         public PanelIzquierdo() {
-            botonNuevo = new JButton("Nuevo");
-            botonProductos=new JButton("Productos");
+            botonNuevo = new JButton("Ingresar Albaran");
+            botonProductos=new JButton("Listado de Productos");
 
             JToolBar barraHerramientas = new JToolBar(JToolBar.VERTICAL); // Orientación vertical
             barraHerramientas.setFloatable(false); // Evitar que se pueda desacoplar
