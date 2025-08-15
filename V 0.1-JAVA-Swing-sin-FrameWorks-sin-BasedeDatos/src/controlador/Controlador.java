@@ -16,16 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.swing.DefaultCellEditor;
-import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
-
 import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -183,89 +174,6 @@ public class Controlador {
         return listaProductos;
     }
 
-    public static JTable tablaProductos() {
-        String[] nombresColumnas = {"Código", "Nombre", "EAN unidad", "EAN bulto", "Opciones"};
-        List<Producto> listaProductos = obtenerListaProductos();
-        Object[][] datosfilas = convertirListaAArray(listaProductos);
-
-        if (datosfilas != null) {
-            DefaultTableModel modelo = new DefaultTableModel(datosfilas, nombresColumnas) {
-                @Override
-                public boolean isCellEditable(int row, int column) {
-                    return column == 4; // Solo la columna "Opciones" es editable
-                }
-            };
-            JTable tabla = new JTable(modelo);
-
-            // Configurar el JComboBox como editor
-            JComboBox<String> comboBox = new JComboBox<>(new String[]{"", "Borrar", "Actualizar"});
-            comboBox.setSelectedIndex(-1); // Asegura que no haya selección inicial
-            comboBox.addActionListener(e -> {
-                int fila = tabla.getSelectedRow();
-                if (fila >= 0) {
-                    String opcion = (String) comboBox.getSelectedItem();
-                    if (opcion != null && !opcion.isEmpty()) { // Ignorar si es la opción vacía
-                        String codigo = (String) modelo.getValueAt(fila, 0);
-                        System.out.println("Fila: " + fila + ", Código: " + codigo + ", Opción: " + opcion);
-                        switch (opcion) {
-                            case "Borrar":
-                                borrarLineadelTXT(listaProductos, codigo);
-                                modelo.removeRow(fila);
-                                break;
-                            case "Actualizar":
-
-                                break;
-                        }
-                    }
-                }
-            });
-
-            TableColumn columnaOpciones = tabla.getColumnModel().getColumn(4);
-            columnaOpciones.setCellEditor(new DefaultCellEditor(comboBox));
-            columnaOpciones.setCellRenderer(new ComboBoxRenderer());
-
-            return tabla;
-        }
-        return null;
-    }
-
-    public static Object[][] convertirListaAArray(List<Producto> listaProductos) {
-        Object[][] matriz = new Object[listaProductos.size()][5];
-        for (int i = 0; i < listaProductos.size(); i++) {
-            Producto producto = listaProductos.get(i);
-            matriz[i][0] = producto.getCodigo();
-            matriz[i][1] = producto.getNombre();
-            matriz[i][2] = producto.getEanProducto();
-            matriz[i][3] = producto.getEanBulto();
-            matriz[i][4] = ""; // Valor inicial del JComboBox
-        }
-        return matriz;
-    }
-
-    static class ComboBoxRenderer extends JComboBox<String> implements TableCellRenderer {
-        private static final long serialVersionUID = 1L;
-
-        public ComboBoxRenderer() {
-            super(new String[]{"", "Borrar", "Actualizar"});
-        }
-
-        @Override
-        public java.awt.Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
-                                                               boolean hasFocus, int row, int column) {
-            setSelectedItem(value);
-            if (isSelected) {
-                setBackground(table.getSelectionBackground());
-                setForeground(table.getSelectionForeground());
-            } else {
-                setBackground(table.getBackground());
-                setForeground(table.getForeground());
-            }
-            return this;
-        }
-    }
-
-
-
 	public static void actualizarArchivoProductos() {
 		List<Producto> listaProductos = obtenerListaProductos();
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter("./src/ficheros/productos.dat"))) {
@@ -277,44 +185,5 @@ public class Controlador {
 			e.printStackTrace();
 		}
 	}
-	
-	static class EditarProductoDialog {
-        private static final long serialVersionUID = 1L;
-		private JTextField txtCodigo, txtNombre, txtEanUnidad, txtEanBulto;
-        private Producto producto;
-        private List<Producto> listaProductos;
-        private DefaultTableModel modelo;
-        private int fila;
-
-        public EditarProductoDialog(Producto producto, List<Producto> listaProductos, DefaultTableModel modelo, int fila) {
-            this.producto = producto;
-            this.listaProductos = listaProductos;
-            this.modelo = modelo;
-            this.fila = fila;
-        }
-
-        private void cargarDatos() {
-            txtCodigo.setText(producto.getCodigo());
-            txtNombre.setText(producto.getNombre());
-            txtEanUnidad.setText(producto.getEanProducto());
-            txtEanBulto.setText(producto.getEanBulto());
-        }
-
-        private void guardarCambios() {
-            producto.setNombre(txtNombre.getText());
-            producto.setEanProducto(txtEanUnidad.getText());
-            producto.setEanBulto(txtEanBulto.getText());
-
-            // Actualizar la lista y la tabla
-            listaProductos.set(fila, producto);
-            modelo.setValueAt(producto.getCodigo(), fila, 0);
-            modelo.setValueAt(producto.getNombre(), fila, 1);
-            modelo.setValueAt(producto.getEanProducto(), fila, 2);
-            modelo.setValueAt(producto.getEanBulto(), fila, 3);
-
-            // Guardar en el archivo
-            actualizarListadoProductos(listaProductos);
-        }
-    }
 
 }

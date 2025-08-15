@@ -1,27 +1,14 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "src/lib/pdfbox-app-3.0.3.jar"
-    ],
-    "java.compile.nullAnalysis.mode": "disabled",
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.jdt.ls.vmargs": "-Xmx1G",
-    "java.import.gradle.enabled": false,
-    "java.import.maven.enabled": false,
-    "java.maven.downloadSources": false,
-    "java.eclipse.downloadSources": false,
-    "java.project.resourceFilters": ["node_modules", ".git"],
-    "java.configuration.runtimes": [
-        {
-            "name": "JavaSE-21",
-            "path": "/usr/lib/jvm/java-21-openjdk-amd64"
-        }
-    ],
-    "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64",
-    "files.exclude": {
-        "bin/": true,
-        "target/": true,
-        "**/*.class": true
-    }
+  // Dile a VS Code dónde está tu código y dónde compilar
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+
+  // Incluye todos los .jar de la carpeta lib en el classpath
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ],
+
+  // Si te pide actualizar la build, acepta
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
+

@@ -1,34 +1,13 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "AlbaranCheck",
-            "request": "launch",
-            "mainClass": "main.AlbaranCheck",
-            "projectName": "albaran-check"
-        },
-        {
-            "type": "java",
-            "name": "Launch AlbaranCheck",
-            "request": "launch",
-            "mainClass": "main.AlbaranCheck",
-            "projectName": "AlbaranCheck",
-            "args": [],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "type": "java",
-            "name": "Debug AlbaranCheck",
-            "request": "launch",
-            "mainClass": "main.AlbaranCheck",
-            "projectName": "AlbaranCheck",
-            "args": [],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "stopOnEntry": false
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run AlbaranCheck",
+      "request": "launch",
+      "mainClass": "main.AlbaranCheck",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
 }
-

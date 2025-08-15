@@ -1,108 +1,51 @@
 package vista;
 
 import java.awt.BorderLayout;
-import java.awt.Image;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
+
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
 
 /**
- *
- * @author Leonardo Méndez
+ * Ventana principal del menú de AlbaranCheck.
  */
 public class JFrameMenu extends JFrame {
 
     private static final long serialVersionUID = 1L;
-	public InicialConLogo nuevoInicialConLogo;
-    public PanelIzquierdo panelIzquierdo;
-    public PanelCentral panelCentral;
-    public NuevoGUI panelNuevo;
-    public ProductosGUI panelMostrarProductos;
+
+    private MenuLateralPanel panelLateral;
+    private MenuContenidoPanel panelContenido;
 
     public JFrameMenu() {
-        setTitle("AlbaranCheck");
-        setBounds(200, 200, 1000, 720);
+        setTitle("AlbaranCheck - Menú");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        setLocationRelativeTo(null); // Centrar la ventana
         setLayout(new BorderLayout());
+        setSize(1000, 700);
+        setLocationRelativeTo(null);
 
-        // Carga la imagen
-        ImageIcon imagenIcono = new ImageIcon(getClass().getResource("/ficheros/logoAlbaranCkeck64x64.png"));
-        // Escala la imagen si es necesario (opcional)
-        Image imagen = imagenIcono.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
-        setIconImage(imagen);
+        panelLateral = new MenuLateralPanel();
+        // Si quieres ajustar más el ancho fijo:
+        panelLateral.setPreferredSize(new Dimension(120, getHeight()));
 
-        panelIzquierdo = new PanelIzquierdo();
-        add(panelIzquierdo, BorderLayout.WEST);
-        panelIzquierdo.setBorder(javax.swing.BorderFactory.createTitledBorder(" Menú "));
+        panelContenido = new MenuContenidoPanel();
 
-        panelCentral = new PanelCentral();
-        add(panelCentral, BorderLayout.CENTER);
-        JPanel panelPiedePagina = new JPanel();
-        JLabel textoPiePagina = new JLabel("Realizado por: Leonardo Méndez. AlbaranCheck™.");
-        panelPiedePagina.add(textoPiePagina);
-        add(panelPiedePagina, BorderLayout.SOUTH);
+        // Cableado de acciones
+        panelLateral.onNuevo(new ActionListener() {
+            @Override public void actionPerformed(ActionEvent e) {
+                panelContenido.showNuevo();
+            }
+        });
+        panelLateral.onProductos(new ActionListener() {
+            @Override public void actionPerformed(ActionEvent e) {
+                panelContenido.showProductos();
+            }
+        });
 
-        setVisible(true);
-
+        // Sin JSplitPane: lateral fijo y contenido central con scroll
+        add(panelLateral, BorderLayout.WEST);
+        add(new JScrollPane(panelContenido), BorderLayout.CENTER);
     }
-
-    public class PanelIzquierdo extends JPanel {
-
-        private static final long serialVersionUID = 1L;
-		JButton botonNuevo;
-        JButton botonProductos;
-
-        public PanelIzquierdo() {
-            botonNuevo = new JButton("Ingresar Albaran");
-            botonProductos=new JButton("Listado de Productos");
-
-            JToolBar barraHerramientas = new JToolBar(JToolBar.VERTICAL); // Orientación vertical
-            barraHerramientas.setFloatable(false); // Evitar que se pueda desacoplar
-
-            // Agregar botones a la barra de herramientas
-            barraHerramientas.add(botonNuevo);
-            barraHerramientas.add(botonProductos);
-            add(barraHerramientas);
-
-            botonNuevo.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    panelCentral.remove(panelCentral.getComponent(0));
-                    panelNuevo = new NuevoGUI();
-                    panelCentral.add(panelNuevo);
-                    revalidate();                             // Actualiza el diseño
-                    repaint();                                // Repinta el JFrame
-                }
-            });
-
-            
-            botonProductos.addActionListener(new ActionListener(){
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    panelCentral.remove(panelCentral.getComponent(0));
-                    panelMostrarProductos=new ProductosGUI();
-                    panelCentral.add(panelMostrarProductos);
-                    revalidate();                             // Actualiza el diseño
-                    repaint();                                // Repinta el JFrame
-                }
-            
-            });
-
-        }
-
-    }
-
-    public class PanelCentral extends JPanel {
-
-        private static final long serialVersionUID = 1L;
-
-		public PanelCentral() {
-            nuevoInicialConLogo = new InicialConLogo();
-            setLayout(new BorderLayout());
-            add(nuevoInicialConLogo, BorderLayout.CENTER);
-        }
-    }
-
 }
+

@@ -16,6 +16,8 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.LayoutStyle.ComponentPlacement;
 //test
 /**
  *
@@ -51,7 +53,7 @@ public class InicioDeSesion extends JFrame {
             setIconImage(imagen);
         }
         // Establece el tamaño y la posición del marco
-        setBounds(800, 400, 280, 175);
+        setBounds(800, 400, 250, 180);   // 800, 400 es la posición en la pantalla y 238, 153 es el tamaño del marco
         // indica la ación a realizar al cerrar el marco
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // establece que al marco no puede cambiarsele el tamaño
@@ -88,42 +90,43 @@ public class InicioDeSesion extends JFrame {
         // Panel y GroupLayout
         panelUnico = new JPanel();
         GroupLayout layout = new GroupLayout(panelUnico);
+        layout.setHorizontalGroup(
+        	layout.createParallelGroup(Alignment.CENTER)
+        		.addGroup(layout.createSequentialGroup()
+        			.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        				.addComponent(labelUsuario)
+        				.addComponent(labelClave))
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        				.addComponent(textFieldUsuario)
+        				.addComponent(textFieldClave)))
+        		.addComponent(botonIniciarSesion, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+        		.addGroup(Alignment.TRAILING, layout.createSequentialGroup()
+        			.addContainerGap(66, Short.MAX_VALUE)
+        			.addComponent(labelIncioSesion)
+        			.addGap(61))
+        );
+        layout.setVerticalGroup(
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addGap(18)
+        			.addComponent(labelIncioSesion)
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(labelUsuario)
+        				.addComponent(textFieldUsuario, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(labelClave)
+        				.addComponent(textFieldClave, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addPreferredGap(ComponentPlacement.UNRELATED)
+        			.addComponent(botonIniciarSesion, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        );
         panelUnico.setLayout(layout);
         layout.setAutoCreateGaps(true);
         layout.setAutoCreateContainerGaps(true);
 
-        // Diseño horizontal
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(GroupLayout.Alignment.CENTER)
-                .addComponent(labelIncioSesion)
-                .addGroup(layout.createSequentialGroup()
-                    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                        .addComponent(labelUsuario)
-                        .addComponent(labelClave))
-                    .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addComponent(textFieldUsuario)
-                        .addComponent(textFieldClave)))
-                .addComponent(botonIniciarSesion)
-        );
-
-        // Diseño vertical
-        layout.setVerticalGroup(
-            layout.createSequentialGroup()
-                .addComponent(labelIncioSesion)
-                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelUsuario)
-                    .addComponent(textFieldUsuario))
-                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelClave)
-                    .addComponent(textFieldClave))
-                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(botonIniciarSesion)
-        );
-
-        add(panelUnico);
+        getContentPane().add(panelUnico);
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
@@ -133,7 +136,7 @@ public class InicioDeSesion extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 String usuario = textFieldUsuario.getText();
                 String clave = new String(textFieldClave.getPassword());
-                if ("leonardo".equals(usuario) && "1234".equals(clave)) {
+                if ("usuario".equals(usuario) && "".equals(clave)) {
                     InicioDeSesion.this.dispose(); // Cierra la ventana actual
                     new JFrameMenu().setVisible(true); // Abre la ventana del menú
                 } else {
