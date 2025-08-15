@@ -2,7 +2,7 @@ package vista;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JToolBar;
@@ -16,8 +16,10 @@ public class MenuLateralPanel extends JPanel {
     private final JButton btnNuevo = new JButton("Nuevo");
     private final JButton btnProductos = new JButton("Productos");
     private final JToolBar toolbar = new JToolBar(JToolBar.VERTICAL);
+    private final JFrameMenu frameMenu;
 
-    public MenuLateralPanel() {
+    public MenuLateralPanel(JFrameMenu frameMenu) {
+        this.frameMenu = frameMenu;
         setLayout(new BorderLayout());
         // Ancho fijo cómodo para la barra
         setPreferredSize(new Dimension(150, 500));
@@ -36,10 +38,17 @@ public class MenuLateralPanel extends JPanel {
 
         // Añadimos el toolbar al panel
         add(toolbar, BorderLayout.CENTER);
-    }
-
-    // API “simple” para enganchar listeners desde el JFrame
-    public void onNuevo(ActionListener l)     { btnNuevo.addActionListener(l); }
-    public void onProductos(ActionListener l) { btnProductos.addActionListener(l); }
-
+        
+        // Configuración de los botones
+        btnNuevo.addActionListener(e -> {
+            // Acción para el botón Nuevo
+            // Modificar lo mostrado en el panel de contenido con el GUI de NuevoGUI
+            frameMenu.showNuevo();
+        });
+        
+        btnProductos.addActionListener(e -> {
+            // Acción para el botón Productos
+            frameMenu.showProductos();
+        });
+	} 
 }

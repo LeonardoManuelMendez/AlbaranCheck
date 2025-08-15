@@ -1,11 +1,11 @@
 package vista;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 /**
@@ -15,8 +15,9 @@ public class JFrameMenu extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
-    private MenuLateralPanel panelLateral;
-    private MenuContenidoPanel panelContenido;
+    private final MenuLateralPanel panelLateral;
+    private final JPanel panelContenido;
+    private final JScrollPane scrollPane;
 
     public JFrameMenu() {
         setTitle("AlbaranCheck - Menú");
@@ -25,27 +26,53 @@ public class JFrameMenu extends JFrame {
         setSize(1000, 700);
         setLocationRelativeTo(null);
 
-        panelLateral = new MenuLateralPanel();
+        // Crear el panel de contenido
+        panelContenido = new JPanel(new BorderLayout());
+        scrollPane = new JScrollPane(panelContenido);
+        
+        // Crear el panel lateral pasando referencia a este JFrame para que pueda llamar a los métodos
+        panelLateral = new MenuLateralPanel(this);
+        
         // Si quieres ajustar más el ancho fijo:
         panelLateral.setPreferredSize(new Dimension(120, getHeight()));
 
-        panelContenido = new MenuContenidoPanel();
-
-        // Cableado de acciones
-        panelLateral.onNuevo(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
-                panelContenido.showNuevo();
-            }
-        });
-        panelLateral.onProductos(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
-                panelContenido.showProductos();
-            }
-        });
-
         // Sin JSplitPane: lateral fijo y contenido central con scroll
         add(panelLateral, BorderLayout.WEST);
-        add(new JScrollPane(panelContenido), BorderLayout.CENTER);
+        add(scrollPane, BorderLayout.CENTER);
+        
+        // Mostrar la pantalla inicial
+        setContent(new InicialConLogo());
+    }
+    
+    /**
+     * Muestra la pantalla inicial con el logo
+     */
+    public void showInicio() {
+        setContent(new InicialConLogo());
+    }
+
+    /**
+     * Muestra la pantalla de Nuevo
+     */
+    public void showNuevo() {
+        setContent(new NuevoGUI());
+    }
+
+    /**
+     * Muestra la pantalla de Productos
+     */
+    public void showProductos() {
+        setContent(new ProductosGUI());
+    }
+
+    /**
+     * Cambia el contenido del panel central
+     */
+    private void setContent(Component comp) {
+        panelContenido.removeAll();
+        panelContenido.add(comp, BorderLayout.CENTER);
+        panelContenido.revalidate();
+        panelContenido.repaint();
     }
 }
 
