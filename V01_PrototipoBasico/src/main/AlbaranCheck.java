@@ -14,7 +14,8 @@ public class AlbaranCheck {
         
        
         SwingUtilities.invokeLater(() -> {
-            new InicioDeSesion().setVisible(true);
+            JFrameMenu frame = new JFrameMenu();
+            frame.setVisible(true);
         });
     }
 }

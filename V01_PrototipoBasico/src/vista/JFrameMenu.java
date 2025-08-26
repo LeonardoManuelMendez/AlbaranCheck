@@ -7,6 +7,8 @@ import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
  * Ventana principal del menú de AlbaranCheck.
@@ -20,6 +22,13 @@ public class JFrameMenu extends JFrame {
     private final JScrollPane scrollPane;
 
     public JFrameMenu() {
+    	// Cambia el tipo de marco por uno con mejor apariencia
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException | UnsupportedLookAndFeelException e) {
+        	System.err.println("Error al establecer el Look and Feel: " + e.getMessage());
+        }
+
         setTitle("AlbaranCheck - Menú");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
@@ -64,13 +73,6 @@ public class JFrameMenu extends JFrame {
     public void showProductos() {
         setContent(new ProductosGUI());
     }
-    /**
-	 * Muestra la pantalla de Usuarios
-	 */
-    public void showUsuarios() {
-		setContent(new UsuariosGUI());
-	}
-
     /**
      * Cambia el contenido del panel central
      */

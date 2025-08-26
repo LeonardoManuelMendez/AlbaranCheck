@@ -79,7 +79,7 @@ public class TablaProductosPanel extends JPanel {
         String codigo = (String) modelo.getValueAt(fila, 0);
         Producto producto = buscarProductoPorCodigo(codigo);
         if (producto != null) {
-            EditarCrearProductos dialog = new EditarCrearProductos(null, producto, listaProductos, modelo, fila);
+            EditarCrearProductos dialog = new EditarCrearProductos(producto);
             dialog.setVisible(true);
         }
     }

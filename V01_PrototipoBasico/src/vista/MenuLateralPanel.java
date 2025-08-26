@@ -15,7 +15,6 @@ public class MenuLateralPanel extends JPanel {
 
     private final JButton btnNuevo = new JButton("Nuevo Albarán");
     private final JButton btnProductos = new JButton("Lista de Productos");
-    private final JButton btnUsuarios = new JButton("Usuario");
     private final JToolBar toolbar = new JToolBar(JToolBar.VERTICAL);
     private final JFrameMenu frameMenu;
 
@@ -32,12 +31,10 @@ public class MenuLateralPanel extends JPanel {
         // Opcional: que no tomen foco al tabular
         btnNuevo.setFocusable(false);
         btnProductos.setFocusable(false);
-        btnUsuarios.setFocusable(false);
 
         // Añadimos los botones SOLO al toolbar
         toolbar.add(btnNuevo);
         toolbar.add(btnProductos);
-        toolbar.add(btnUsuarios);
 
         // Añadimos el toolbar al panel
         add(toolbar, BorderLayout.CENTER);
@@ -53,10 +50,6 @@ public class MenuLateralPanel extends JPanel {
             // Acción para el botón Productos
             frameMenu.showProductos();
         });
-        
-        btnUsuarios.addActionListener(e -> {
-			// Acción para el botón Usuario
-			frameMenu.showUsuarios();
-		});
+
 	} 
 }

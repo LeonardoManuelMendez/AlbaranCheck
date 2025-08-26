@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
+import modelo.Producto;
+
 public class ProductosGUI extends javax.swing.JPanel {
     private static final long serialVersionUID = 1L;
     private JLabel jLabel1;
@@ -37,7 +39,8 @@ public class ProductosGUI extends javax.swing.JPanel {
         
         JButton botonIngresarNuevoP = new JButton("Ingresar Nuevo Producto");
         botonIngresarNuevoP.addActionListener(e -> {
-        	EditarCrearProductos editarCrearProductos = new EditarCrearProductos();
+        	Producto producto = null; // Pasar null para crear un nuevo producto
+        	EditarCrearProductos editarCrearProductos = new EditarCrearProductos(producto);
         	editarCrearProductos.setVisible(true);
         	// Actualizar la tabla después de cerrar el diálogo
         	editarCrearProductos.addWindowListener(new java.awt.event.WindowAdapter() {

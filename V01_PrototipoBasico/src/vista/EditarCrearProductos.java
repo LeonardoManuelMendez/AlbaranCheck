@@ -7,10 +7,12 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import modelo.Producto;
+
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
-import javax.swing.JCheckBox;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import java.awt.event.ActionListener;
@@ -29,7 +31,7 @@ public class EditarCrearProductos extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public EditarCrearProductos() {
+	public EditarCrearProductos(Producto producto) {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -100,24 +102,35 @@ public class EditarCrearProductos extends JDialog {
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 			{
-				JButton okButton = new JButton("Guardar");
-				okButton.addActionListener(new ActionListener() {
+				JButton botonGuardar = new JButton("Guardar");
+				botonGuardar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						
 					}
 				});
-				okButton.setActionCommand("Cuardar");
-				buttonPane.add(okButton);
-				getRootPane().setDefaultButton(okButton);
+				botonGuardar.setActionCommand("Guardar");
+				buttonPane.add(botonGuardar);
+				getRootPane().setDefaultButton(botonGuardar);
 			}
 			{
-				JButton cancelButton = new JButton("Cancelar");
-				cancelButton.addActionListener(new ActionListener() {
+				JButton botonCancelar = new JButton("Cancelar");
+				botonCancelar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						dispose();
 					}
 				});
-				buttonPane.add(cancelButton);
+				buttonPane.add(botonCancelar);
+			}
+		}
+		if (producto != null) {
+			textField_1.setText(producto.getCodigo());
+			textField.setText(producto.getNombre());
+			textField_2.setText(producto.getEanProducto());
+			textField_3.setText(producto.getEanBulto());
+			if (producto.getFormato().equals("Unidades")) {
+				rdbtnUnidades.setSelected(true);
+			} else if (producto.getFormato().equals("Bultos")) {
+				rdbtnBultos.setSelected(true);
 			}
 		}
 	}

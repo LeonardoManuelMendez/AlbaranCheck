@@ -148,6 +148,7 @@ public class Controlador {
         String nombre_t;
         String eanBulto_t;
         String eanProducto_t;
+        String formato_t;
 
         String regex1 = "^(\\d{1,6})\\s{3,}(.{3,32})\\s{3,}(\\d*)\\s{3,}(\\d*)\\s*$";
         Pattern pattern = Pattern.compile(regex1);
@@ -161,7 +162,8 @@ public class Controlador {
                     nombre_t = matcher.group(2).trim();
                     eanProducto_t = matcher.group(3);
                     eanBulto_t = matcher.group(4);
-                    listaProductos.add(new Producto(codigo_t, nombre_t, eanProducto_t, eanBulto_t));
+                    formato_t = ""; // No se extrae de la línea, se deja vacío o se puede modificar según necesidad                    
+                    listaProductos.add(new Producto(codigo_t, nombre_t, eanProducto_t, eanBulto_t, formato_t));
                 }
             }
         } catch (IOException e) {
