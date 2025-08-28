@@ -1,3 +1,4 @@
 # Versión 0.1: Prototipo Básico (Java sin frameworks, sin persistencia)
 
-Este prototipo permite gestionar la recepción de albaranes de forma local sin persistencia en base de datos. Incluye carga de PDFs, escaneo de productos, verificación contra el albarán y generación de un informe básico.
+Este prototipo permite gestionar la recepción de albaranes de forma local sin persistencia en base de datos. Incluye carga de PDFs, escaneo de productos, verificación contra el albarán y generación de un informe básico sobre los productos recibidos.
+La extracción de datos del albarán en PDF se realiza utilizando una expresión regular que identifica y captura la información relevante, como el número de albarán, la fecha y los productos incluidos. Esta expresión regular es única y se adapta a la estructura específica de los albaranes utilizados en la empresa. Por cada albarán debe haber una expresión regular definida que permita la correcta identificación de los datos. Para el actual prototipo solo se ha definido una expresión regular para un tipo específico de albarán.

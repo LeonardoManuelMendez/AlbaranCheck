@@ -91,7 +91,7 @@ public class Controlador {
 		return listaProductos;
 	}
 
-	public static void borrarLineadelTXT(List<Producto> listaProductos, String id) {
+	public static void borrarLineadelDAT(List<Producto> listaProductos, String id) {
 
 		for (int i = 0; i < listaProductos.size(); i++) {
 			if (listaProductos.get(i).getCodigo().equals(id)) {

@@ -54,7 +54,7 @@ public class TablaProductosPanel extends JPanel {
                         System.out.println("Fila: " + fila + ", Código: " + codigo + ", Opción: " + opcion);
                         switch (opcion) {
                             case "Borrar":
-                                Controlador.borrarLineadelTXT(listaProductos, codigo);
+                                Controlador.borrarLineadelDAT(listaProductos, codigo);
                                 modelo.removeRow(fila);
                                 break;
                             case "Actualizar":

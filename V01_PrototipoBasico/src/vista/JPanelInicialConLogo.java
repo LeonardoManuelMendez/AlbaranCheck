@@ -7,11 +7,11 @@ import java.awt.*;
  *
  * @author Leonardo Méndez
  */
-public class InicialConLogo extends JPanel {
+public class JPanelInicialConLogo extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
-	public InicialConLogo() {
+	public JPanelInicialConLogo() {
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
         

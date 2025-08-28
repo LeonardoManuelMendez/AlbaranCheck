@@ -50,21 +50,21 @@ public class JFrameMenu extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
         
         // Mostrar la pantalla inicial
-        setContent(new InicialConLogo());
+        setContent(new JPanelInicialConLogo());
     }
     
     /**
      * Muestra la pantalla inicial con el logo
      */
     public void showInicio() {
-        setContent(new InicialConLogo());
+        setContent(new JPanelInicialConLogo());
     }
 
     /**
      * Muestra la pantalla de Nuevo Albarán
      */
     public void showNuevo() {
-        setContent(new NuevoGUI());
+        setContent(new NuevoAlbaranGUI());
     }
 
     /**

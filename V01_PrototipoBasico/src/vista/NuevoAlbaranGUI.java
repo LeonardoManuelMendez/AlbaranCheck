@@ -26,14 +26,14 @@ import java.awt.event.ActionEvent;
  *
  * @author Leonardo Méndez
  */
-public class NuevoGUI extends javax.swing.JPanel {
+public class NuevoAlbaranGUI extends javax.swing.JPanel {
 
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * Creates new form NuevoPrueba
 	 */
-	public NuevoGUI() {
+	public NuevoAlbaranGUI() {
 		initComponents();
 
 	}
@@ -165,7 +165,7 @@ public class NuevoGUI extends javax.swing.JPanel {
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("Archivos PDF", "pdf");
 		fileChooser.setFileFilter(filter);
 
-		int result = fileChooser.showOpenDialog(NuevoGUI.this); // Mostrar el diálogo en el panel
+		int result = fileChooser.showOpenDialog(NuevoAlbaranGUI.this); // Mostrar el diálogo en el panel
 		if (result == JFileChooser.APPROVE_OPTION) {
 			File archivoElegido = fileChooser.getSelectedFile();
 			jTextField1.setText(archivoElegido.getAbsolutePath());
