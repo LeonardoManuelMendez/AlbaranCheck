@@ -1,5 +1,7 @@
 package vista;
 
+import java.util.List;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
@@ -7,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.LayoutStyle.ComponentPlacement;
 
+import dao.DAO;
 import modelo.Producto;
 
 public class ProductosGUI extends javax.swing.JPanel {
@@ -14,6 +17,7 @@ public class ProductosGUI extends javax.swing.JPanel {
     private JLabel jLabel1;
     private JScrollPane jScrollPanelListado;
     private TablaProductosPanel tablaProductosPanel;
+    private List<Producto> listaProductos;
 
     public ProductosGUI() {
         initComponents();
@@ -23,9 +27,10 @@ public class ProductosGUI extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jScrollPanelListado = new javax.swing.JScrollPane();
         jLabel1.setText("Listado de Productos");
+        listaProductos = DAO.leerListaDeProductosProducto();
 
         try {
-            tablaProductosPanel = new TablaProductosPanel();
+            tablaProductosPanel = new TablaProductosPanel(listaProductos);
             if (tablaProductosPanel.getTabla() != null) {
                 jScrollPanelListado.setViewportView(tablaProductosPanel.getTabla());
             } else {
@@ -40,14 +45,14 @@ public class ProductosGUI extends javax.swing.JPanel {
         JButton botonIngresarNuevoP = new JButton("Ingresar Nuevo Producto");
         botonIngresarNuevoP.addActionListener(e -> {
         	Producto producto = null; // Pasar null para crear un nuevo producto
-        	EditarCrearProductos editarCrearProductos = new EditarCrearProductos(producto);
+        	EditarCrearProductos editarCrearProductos = new EditarCrearProductos(producto, listaProductos);
         	editarCrearProductos.setVisible(true);
         	// Actualizar la tabla después de cerrar el diálogo
         	editarCrearProductos.addWindowListener(new java.awt.event.WindowAdapter() {
         		@Override
         		public void windowClosed(java.awt.event.WindowEvent windowEvent) {
         			if (tablaProductosPanel != null) {
-        				tablaProductosPanel.actualizarTabla();
+        				tablaProductosPanel.actualizarTabla(listaProductos);
         			}
         		}
         	});

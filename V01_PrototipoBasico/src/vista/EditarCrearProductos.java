@@ -8,6 +8,7 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import dao.DAO;
 import modelo.Producto;
 
 import javax.swing.JLabel;
@@ -16,6 +17,7 @@ import java.awt.Font;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import java.awt.event.ActionListener;
+import java.util.List;
 import java.awt.event.ActionEvent;
 
 public class EditarCrearProductos extends JDialog {
@@ -31,7 +33,7 @@ public class EditarCrearProductos extends JDialog {
 	/**
 	 * Create the dialog.
 	 */
-	public EditarCrearProductos(Producto producto) {
+	public EditarCrearProductos(Producto producto, List<Producto> listaProductos) {
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -105,7 +107,32 @@ public class EditarCrearProductos extends JDialog {
 				JButton botonGuardar = new JButton("Guardar");
 				botonGuardar.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						
+						String codigo = textField_1.getText().trim();
+						String nombre = textField.getText().trim();
+						String eanUnidad = textField_2.getText().trim();
+						String eanBulto = textField_3.getText().trim();
+						String formato = "";
+						if (rdbtnUnidades.isSelected()) {
+							formato = "Unidades";
+						} else if (rdbtnBultos.isSelected()) {
+							formato = "Bultos";
+						}
+						if (producto == null) { // Crear nuevo producto
+							Producto nuevoProducto = new Producto(codigo, nombre);
+							nuevoProducto.setEanProducto(eanUnidad);
+							nuevoProducto.setEanBulto(eanBulto);
+							nuevoProducto.setFormato(formato);
+							listaProductos.add(nuevoProducto);
+						} else { // Editar producto existente
+							producto.setCodigo(codigo);
+							producto.setNombre(nombre);
+							producto.setEanProducto(eanUnidad);
+							producto.setEanBulto(eanBulto);
+							producto.setFormato(formato);
+						}
+						// Guardar la lista actualizada de productos
+						DAO.guardarListaProductos(listaProductos);
+						dispose(); // Cerrar el diálogo después de guardar
 					}
 				});
 				botonGuardar.setActionCommand("Guardar");
@@ -133,5 +160,6 @@ public class EditarCrearProductos extends JDialog {
 				rdbtnBultos.setSelected(true);
 			}
 		}
+		// 
 	}
 }

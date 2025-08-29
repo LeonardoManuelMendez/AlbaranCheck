@@ -20,15 +20,14 @@ public class TablaProductosPanel extends JPanel {
     
     private JTable tabla;
     private DefaultTableModel modelo;
-    private List<Producto> listaProductos;
+
     
-    public TablaProductosPanel() {
-        initializeComponents();
+    public TablaProductosPanel(List<Producto> listaProductos) {
+        initializeComponents(listaProductos);
     }
     
-    private void initializeComponents() {
+    private void initializeComponents(List<Producto> listaProductos) {
         String[] nombresColumnas = {"Código", "Nombre", "EAN unidad", "EAN bulto", "Opciones"};
-        listaProductos = Controlador.obtenerListaProductos();
         Object[][] datosfilas = convertirListaAArray(listaProductos);
 
         if (datosfilas != null) {
@@ -58,7 +57,7 @@ public class TablaProductosPanel extends JPanel {
                                 modelo.removeRow(fila);
                                 break;
                             case "Actualizar":
-                                abrirDialogoEditar(fila);
+                                abrirDialogoEditar(fila, listaProductos);
                                 break;
                         }
                     }
@@ -75,16 +74,16 @@ public class TablaProductosPanel extends JPanel {
         }
     }
     
-    private void abrirDialogoEditar(int fila) {
+    private void abrirDialogoEditar(int fila, List<Producto> listaProductos) {
         String codigo = (String) modelo.getValueAt(fila, 0);
-        Producto producto = buscarProductoPorCodigo(codigo);
+        Producto producto = buscarProductoPorCodigo(codigo, listaProductos);
         if (producto != null) {
-            EditarCrearProductos dialog = new EditarCrearProductos(producto);
+            EditarCrearProductos dialog = new EditarCrearProductos(producto, listaProductos);
             dialog.setVisible(true);
         }
     }
     
-    private Producto buscarProductoPorCodigo(String codigo) {
+    private Producto buscarProductoPorCodigo(String codigo, List<Producto> listaProductos) {
         for (Producto producto : listaProductos) {
             if (producto.getCodigo().equals(codigo)) {
                 return producto;
@@ -110,8 +109,7 @@ public class TablaProductosPanel extends JPanel {
         return tabla;
     }
     
-    public void actualizarTabla() {
-        listaProductos = Controlador.obtenerListaProductos();
+    public void actualizarTabla(List<Producto> listaProductos) {
         Object[][] datosfilas = convertirListaAArray(listaProductos);
         modelo.setDataVector(datosfilas, new String[]{"Código", "Nombre", "EAN unidad", "EAN bulto", "Opciones"});
     }
