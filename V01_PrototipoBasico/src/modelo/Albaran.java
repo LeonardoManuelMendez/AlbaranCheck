@@ -19,8 +19,12 @@ public class Albaran {
     }
 
     public Albaran(String numero, LocalDate fecha) {
-        this.numero = numero;
-        this.fecha = fecha;
+		this.numero = numero;
+		this.fecha = fecha;
+		this.tipo = "ENTRADA"; // Valor por defecto
+	}
+    
+    public Albaran() {
     }
 
     public String getNumero() {

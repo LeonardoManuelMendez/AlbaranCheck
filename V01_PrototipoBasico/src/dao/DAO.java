@@ -11,7 +11,9 @@ import modelo.Producto;
  */
 
 public class DAO {
+	
 	private static String rutaFicheroProductos = "./src/ficheros/productos.dat";
+	
 	public static void guardarListaProductos(List<Producto> listaProductos) {
 		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(rutaFicheroProductos, false))){  // con false sobreescribe el archivo. Borrando todo su contenido
 			for(Producto producto : listaProductos) {
@@ -28,12 +30,15 @@ public class DAO {
 		
 	}
 	
-	public static List<Producto> leerListaDeProductosProducto() {
+	public static List<Producto> leerListaDeProductos() {
+		
 		List<Producto> listaProductos = new java.util.ArrayList<>();
+		
 		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rutaFicheroProductos))) {
 			while (true) {
 				try {
 					Producto producto = (Producto) ois.readObject();
+					System.out.println("Producto leído: " + producto);
 					listaProductos.add(producto);
 				} catch (EOFException e) {
 					break; // Fin del archivo

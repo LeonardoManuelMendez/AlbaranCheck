@@ -34,6 +34,10 @@ public class EditarCrearProductos extends JDialog {
 	 * Create the dialog.
 	 */
 	public EditarCrearProductos(Producto producto, List<Producto> listaProductos) {
+		setTitle(producto == null ? "Crear producto" : "Editar producto");
+	    setModal(true); // Bloquea hasta cerrar (clave)
+	    setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+	    setLocationRelativeTo(null);
 		setBounds(100, 100, 450, 300);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -160,6 +164,5 @@ public class EditarCrearProductos extends JDialog {
 				rdbtnBultos.setSelected(true);
 			}
 		}
-		// 
 	}
 }

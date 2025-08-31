@@ -33,7 +33,7 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 	/**
 	 * Creates new form NuevoPrueba
 	 */
-	public NuevoAlbaranGUI() {
+	public NuevoAlbaranGUI(List<Producto> listaProductos, List<ProductoEnAlbaran> listaProductosEnAlbaran, Albaran albaranActual) {
 		initComponents();
 
 	}

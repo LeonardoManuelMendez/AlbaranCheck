@@ -69,8 +69,6 @@ public class VerificacionGUI extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel1.setText("Escanear producto/bulto:");
-
-        ean_leido_textField.setText("EAN");
         ean_leido_textField.addActionListener((java.awt.event.ActionEvent evt) -> {
             jTextField1ActionPerformed(evt);
         });
