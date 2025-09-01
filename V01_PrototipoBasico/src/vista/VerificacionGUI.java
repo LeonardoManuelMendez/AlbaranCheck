@@ -1,11 +1,7 @@
 package vista;
 
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
 import java.util.List;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -20,12 +16,15 @@ import modelo.*;
 public class VerificacionGUI extends javax.swing.JPanel {
 
     private static final long serialVersionUID = 1L;
+    private List<ProductoEnAlbaran> listaProductosEnAlbaran;
+    private List<Producto> listaProductos;
 	/**
      * Creates new form VerificacionGUI
      */
-    public VerificacionGUI() {
-
-        initComponents();
+    public VerificacionGUI(List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaProductos) {
+		this.listaProductosEnAlbaran = listaProductosEnAlbaran;
+		this.listaProductos = listaProductos;
+        initComponents(listaProductosEnAlbaran, listaProductos);
     }
 
     /**
@@ -35,7 +34,7 @@ public class VerificacionGUI extends javax.swing.JPanel {
      */
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents(List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaProductos) {
 
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -117,6 +116,7 @@ public class VerificacionGUI extends javax.swing.JPanel {
                     .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         this.setLayout(layout);
+        cargarTablaInicial();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,27 +125,94 @@ public class VerificacionGUI extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {
-        
-        
-        List <Producto> productosArrayList=new ArrayList<>();
-        try {
-            FileInputStream fis = new FileInputStream("producto.txt");
-            InputStreamReader isr = new InputStreamReader(fis);
-            BufferedReader br = new BufferedReader(isr);
+        if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) {
+            String eanLeido = ean_leido_textField.getText().trim();
+            if (eanLeido.isEmpty()) return;
 
-            while (br.ready()) {
-                
-
+            // 1) Buscar el producto por EAN en la lista completa de productos
+            Producto productoLeido = buscarProductoPorEan(eanLeido);
+            if (productoLeido == null) {
+                javax.swing.JOptionPane.showMessageDialog(
+                    this, "EAN no existe en catálogo de productos.", "No encontrado",
+                    javax.swing.JOptionPane.WARNING_MESSAGE
+                );
+                ean_leido_textField.setText("");
+                return;
             }
 
-            br.close();
-            isr.close();
-            fis.close();
+            // 2) Buscar ese producto dentro del albarán (por código)
+            ProductoEnAlbaran pea = buscarEnAlbaranPorCodigo(productoLeido.getCodigo());
+            if (pea == null) {
+                javax.swing.JOptionPane.showMessageDialog(
+                    this, "El producto no está en este albarán.", "No encontrado en albarán",
+                    javax.swing.JOptionPane.WARNING_MESSAGE
+                );
+                ean_leido_textField.setText("");
+                return;
+            }
 
-        } catch (IOException e) {
-            System.out.println("No se puede leer el fichero: " + e.getMessage());
+            // 3) Incrementar cantidades recibidas en función del EAN leído
+            if (eanLeido.equals(productoLeido.getEanProducto())) {
+                pea.setUnidades_recibidas(pea.getUnidades_recibidas() + 1);
+            } else if (eanLeido.equals(productoLeido.getEanBulto())) {
+                pea.setBultos_recibidos(pea.getBultos_recibidos() + 1);
+            }
+
+            // 4) Refrescar tabla
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setRowCount(0);
+            for (ProductoEnAlbaran p : listaProductosEnAlbaran) {
+                Producto prod = p.getProducto();
+                model.addRow(new Object[]{
+                    prod.getCodigo(),
+                    prod.getNombre(),
+                    p.getBultos_recibidos(),
+                    p.getUnidades_recibidas(),
+                    "Editar"
+                });
+            }
+
+            ean_leido_textField.setText("");
+            jTable1.revalidate();
+            jTable1.repaint();
+            ean_leido_textField.requestFocusInWindow();
         }
-    }//GEN-LAST:event_jTextField1KeyPressed
+    }
+
+    private Producto buscarProductoPorEan(String ean) {
+        for (Producto p : listaProductos) {
+            if (ean.equals(p.getEanProducto()) || ean.equals(p.getEanBulto())) {
+                return p;
+            }
+        }
+        return null;
+    }
+
+    private ProductoEnAlbaran buscarEnAlbaranPorCodigo(String codigo) {
+        for (ProductoEnAlbaran pea : listaProductosEnAlbaran) {
+            if (pea.getProducto() != null && codigo.equals(pea.getProducto().getCodigo())) {
+                return pea;
+            }
+        }
+        return null;
+    }
+
+    
+    private void cargarTablaInicial() {
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0); // limpia
+        for (ProductoEnAlbaran pea : listaProductosEnAlbaran) {
+            Producto producto = pea.getProducto();
+            model.addRow(new Object[]{
+                producto.getCodigo(),
+                producto.getNombre(),
+                pea.getBultos_recibidos(),   // o esperados si quieres mostrarlos
+                pea.getUnidades_recibidas(), // idem
+                "Editar"
+            });
+        }
+    }
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

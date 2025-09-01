@@ -9,6 +9,7 @@ import java.util.List;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -169,7 +170,13 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		if (result == JFileChooser.APPROVE_OPTION) {
 			File archivoElegido = fileChooser.getSelectedFile();
 			jTextField1.setText(archivoElegido.getAbsolutePath());
-			List<ProductoEnAlbaran> paraTabla = Controlador.leerAlbaran(archivoElegido);
+			List<ProductoEnAlbaran> paraTabla = null;
+			try {
+				paraTabla = Controlador.leerAlbaran(archivoElegido);
+			} catch (Exception e) {
+				JOptionPane.showMessageDialog(this, "Error al leer el archivo PDF: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+				e.printStackTrace();
+			}
 
 			// Colocar la información del albarán seleccionado
 			Albaran albaran = paraTabla.get(0).getAlbaran();
@@ -260,7 +267,7 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		contenedor.remove(this);
 
 		// Agregar el nuevo JPanel
-		VerificacionGUI nuevaVerificacion = new VerificacionGUI();
+		VerificacionGUI nuevaVerificacion = new VerificacionGUI(listaProductosEnAlbaran, listaProductos);
 
 		contenedor.add(nuevaVerificacion);
 

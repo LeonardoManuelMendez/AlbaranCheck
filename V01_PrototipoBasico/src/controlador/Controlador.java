@@ -9,6 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import javax.swing.JOptionPane;
+
 import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
@@ -78,6 +81,8 @@ public class Controlador {
 
 		} catch (IOException e) {
 			System.out.println("Error al leer el archivo PDF: " + e.getMessage()); // Mensaje más detallado
+		} catch (Exception e) {
+			System.out.println("Error inesperado: " + e.getMessage());
 		}
 		System.out.println(listaProductos.toString());
 
