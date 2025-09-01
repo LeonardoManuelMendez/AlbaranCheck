@@ -6,16 +6,10 @@ import controlador.*;
 import java.io.File;
 import java.util.List;
 
-import javax.swing.DefaultCellEditor;
-import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTable;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableColumn;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle.ComponentPlacement;
@@ -32,7 +26,7 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 	private static final long serialVersionUID = 1L;
 	private List<ProductoEnAlbaran> listaProductosEnAlbaran;
 	private List<Producto> listaProductos;
-	
+	private TablaProductosEnAlbaranPanel tablaPanel;
 
 	/**
 	 * Creates new form NuevoPrueba
@@ -62,7 +56,6 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		jTextArea1 = new javax.swing.JTextArea();
 		jLabel3 = new javax.swing.JLabel();
 		jScrollPane3 = new javax.swing.JScrollPane();
-		jTableListado = new javax.swing.JTable();
 
 		jLabel1.setText("Seleccionar Albarán:");
 
@@ -88,25 +81,10 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		jScrollPane1.setViewportView(jTextArea1);
 
 		jLabel3.setText("Articulos");
-
-		// Crear la tabla con el modelo de datos
-		jTableListado.setModel(new javax.swing.table.DefaultTableModel(
-				new Object[][] { { null, null, null, null, "" }, { null, null, null, null, null } },
-				new String[] { "Código", "Nombre", "Unidades", "Bultos", "Opciones" }) {
-			private static final long serialVersionUID = 1L;
-			boolean[] canEdit = new boolean[] { false, false, false, false, true };
-
-			public boolean isCellEditable(int rowIndex, int columnIndex) {
-				return canEdit[columnIndex];
-			}
-		});
-		// Establecer el tamaño de las columnas
-		jScrollPane3.setViewportView(jTableListado);
-		if (jTableListado.getColumnModel().getColumnCount() > 0) {
-			jTableListado.getColumnModel().getColumn(0).setPreferredWidth(40);
-			jTableListado.getColumnModel().getColumn(1).setPreferredWidth(80);
-			jTableListado.getColumnModel().getColumn(4).setPreferredWidth(40);
-		}
+		
+		// Crear el panel de la tabla usando TablaProductosEnAlbaranPanel
+		tablaPanel = new TablaProductosEnAlbaranPanel(listaProductosEnAlbaran);
+		jScrollPane3.setViewportView(tablaPanel);
 		
 		JButton btnVerificar = new JButton("Verificar");
 		btnVerificar.addActionListener(new ActionListener() {
@@ -188,80 +166,12 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 			jTextArea1.setText("Albarán número: " + albaran.getNumero());
 			jTextArea1.append("\n" + "Fecha: " + albaran.getFecha());
 
-			// Limpiar la tabla antes de insertar nuevos datos
-			for (int i = 0; i < jTableListado.getRowCount(); i++) {
-				for (int j = 0; j < jTableListado.getColumnCount(); j++) {
-					jTableListado.setValueAt("", i, j);
-				}
-			}
-
-			DefaultTableModel model = (DefaultTableModel) jTableListado.getModel(); // Obtener el modelo de la tabla
-
-			// Insertar los datos en las celdas, agregando filas si es necesario
-			for (int i = 0; i < paraTabla.size(); i++) {
-				ProductoEnAlbaran producto = paraTabla.get(i);
-
-				if (i >= jTableListado.getRowCount()) {
-					model.addRow(new Object[jTableListado.getColumnCount()]); // Agregar una nueva fila vacía
-				}
-
-				jTableListado.setValueAt(producto.getProducto().getCodigo(), i, 0);
-				jTableListado.setValueAt(producto.getProducto().getNombre(), i, 1);
-				jTableListado.setValueAt(producto.getUnidades_esperadas(), i, 2);
-				jTableListado.setValueAt(producto.getBultos_esperados(), i, 3);
-			}
-
-			// Configurar el JComboBox como editor
-			JComboBox<String> comboBox = new JComboBox<>(new String[] { "", "Borrar", "Actualizar" });
-			comboBox.setSelectedIndex(-1); // Asegura que no haya selección inicial
-			comboBox.addActionListener(e -> {
-				int fila = jTableListado.getSelectedRow();
-				if (fila >= 0) {
-					String opcion = (String) comboBox.getSelectedItem();
-					if (opcion != null && !opcion.isEmpty()) { // Ignorar si es la opción vacía
-						String codigo = (String) model.getValueAt(fila, 0);
-						System.out.println("Fila: " + fila + ", Código: " + codigo + ", Opción: " + opcion);
-						switch (opcion) {
-						case "Borrar":
-
-							break;
-						case "Actualizar":
-							
-
-							break;
-						}
-					}
-				}
-			});
-
-			TableColumn columnaOpciones = jTableListado.getColumnModel().getColumn(4);
-			columnaOpciones.setCellEditor(new DefaultCellEditor(comboBox));
-			columnaOpciones.setCellRenderer(new ComboBoxRenderer());
+			// Actualizar la tablaPanel con los nuevos datos
+			tablaPanel.actualizarTabla(paraTabla);
 		}
 
 	}// GEN-LAST:event_jButton1ActionPerformed
 
-	static class ComboBoxRenderer extends JComboBox<String> implements TableCellRenderer {
-		private static final long serialVersionUID = 1L;
-
-		public ComboBoxRenderer() {
-			super(new String[] { "", "Borrar", "Actualizar" });
-		}
-
-		@Override
-		public java.awt.Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
-				boolean hasFocus, int row, int column) {
-			setSelectedItem(value);
-			if (isSelected) {
-				setBackground(table.getSelectionBackground());
-				setForeground(table.getSelectionForeground());
-			} else {
-				setBackground(table.getBackground());
-				setForeground(table.getForeground());
-			}
-			return this;
-		}
-	}
 
 	private void accionBotonVerificar(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton2ActionPerformed
 
@@ -289,7 +199,6 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 	private javax.swing.JLabel jLabel3;
 	private javax.swing.JScrollPane jScrollPane1;
 	private javax.swing.JScrollPane jScrollPane3;
-	private javax.swing.JTable jTableListado;
 	private javax.swing.JTextArea jTextArea1;
 	private javax.swing.JTextField jTextField1;
 }

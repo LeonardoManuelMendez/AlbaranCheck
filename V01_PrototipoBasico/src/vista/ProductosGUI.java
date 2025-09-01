@@ -8,8 +8,6 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.LayoutStyle.ComponentPlacement;
-
-import dao.DAO;
 import modelo.Producto;
 
 public class ProductosGUI extends javax.swing.JPanel {

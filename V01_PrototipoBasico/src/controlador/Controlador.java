@@ -115,6 +115,18 @@ public class Controlador {
 		DAO.guardarListaProductos(listaProductos);
 	}
 	
+	public static void borrarProductoEnAlbaran(List<ProductoEnAlbaran> listaProductosEnAlbaran, String codigo) {
+		for (int i = 0; i < listaProductosEnAlbaran.size(); i++) {
+			ProductoEnAlbaran pea = listaProductosEnAlbaran.get(i);
+			if (pea != null && pea.getProducto() != null && pea.getProducto().getCodigo().equals(codigo)) {
+				listaProductosEnAlbaran.remove(i);
+				break;
+			}
+		}
+		// Si tienes persistencia, aquí deberías guardar la lista actualizada
+		// Por ejemplo: DAO.guardarListaProductosEnAlbaran(listaProductosEnAlbaran);
+	}
+	
 	public static String resultadoValidacion(ProductoEnAlbaran pea, Producto productoLeido, String eanLeido) {
 		if (eanLeido.equals(productoLeido.getEanProducto())) {
 			pea.setUnidades_recibidas(pea.getUnidades_recibidas() + 1);

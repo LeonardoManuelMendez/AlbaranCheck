@@ -42,7 +42,7 @@ public class JFrameMenu extends JFrame {
         	System.err.println("Error al establecer el Look and Feel: " + e.getMessage());
         }
 
-        setTitle("AlbaranCheck - Menú");
+        setTitle("AlbaranCheck");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         setSize(1000, 700);
@@ -63,14 +63,7 @@ public class JFrameMenu extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
         
         // Mostrar la pantalla inicial
-        setContent(new JPanelInicialConLogo());
-    }
-    
-    /**
-     * Muestra la pantalla inicial con el logo
-     */
-    public void showInicio() {
-        setContent(new JPanelInicialConLogo());
+        setContent(new NuevoAlbaranGUI(listaProductos, listaProductosEnAlbaran, albaranActual));
     }
 
     /**

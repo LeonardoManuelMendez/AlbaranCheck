@@ -7,16 +7,11 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
-import dao.DAO;
-import modelo.Producto;
 import modelo.ProductoEnAlbaran;
-
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JRadioButton;
-import javax.swing.ButtonGroup;
 import java.awt.event.ActionListener;
 import java.util.List;
 import java.awt.event.ActionEvent;
@@ -26,7 +21,6 @@ public class EditarProductosEnAlbaran extends JDialog {
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
 	private JTextField textField;
-	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JTextField textField_1;
 	private JTextField textFieldCantEsp;
 	private JTextField textFieldCantRecib;
@@ -178,9 +172,9 @@ public class EditarProductosEnAlbaran extends JDialog {
 			textField.setText(productoEnAlbaran.getProducto().getNombre());
 			textFieldCantEsp.setText(String.valueOf(productoEnAlbaran.getUnidades_esperadas()));
 			textFieldCantRecib.setText(String.valueOf(productoEnAlbaran.getUnidades_recibidas()));
-			if (productoEnAlbaran.getProducto().getFormato().equals("Unidades")) {
+			if (productoEnAlbaran.getBultos_esperados() > 0 && productoEnAlbaran.getUnidades_esperadas() == 0) {
 				rdbtnUnidades.setSelected(true);
-			} else if (productoEnAlbaran.getProducto().getFormato().equals("Bultos")) {
+			} else if (productoEnAlbaran.getUnidades_esperadas() > 0 && productoEnAlbaran.getBultos_esperados() == 0) {
 				rdbtnBultos.setSelected(true);
 			}
 		}
