@@ -202,8 +202,8 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 
 				jTableListado.setValueAt(producto.getProducto().getCodigo(), i, 0);
 				jTableListado.setValueAt(producto.getProducto().getNombre(), i, 1);
-				jTableListado.setValueAt(producto.getBultos_esperados(), i, 2);
-				jTableListado.setValueAt(producto.getUnidades_esperadas(), i, 3);
+				jTableListado.setValueAt(producto.getUnidades_esperadas(), i, 2);
+				jTableListado.setValueAt(producto.getBultos_esperados(), i, 3);
 			}
 
 			// Configurar el JComboBox como editor

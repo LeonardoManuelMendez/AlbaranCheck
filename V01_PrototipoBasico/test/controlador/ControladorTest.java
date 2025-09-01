@@ -2,41 +2,22 @@ package controlador;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.time.LocalDate;
 import java.util.List;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import modelo.ProductoEnAlbaran;
-import java.io.File;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 
 class ControladorTest {
 
-	private File getResourceFile(String path) throws URISyntaxException {
-        URL resource = getClass().getClassLoader().getResource(path);
-        if (resource == null) {
-            throw new IllegalArgumentException("No se encontró el recurso: " + path);
-        }
-        return new File(resource.toURI());
-    }
-
     @Test
     @DisplayName("Debe leer un PDF de albarán real y devolver productos")
     void testLeerAlbaranDesdePdf() throws Exception {
-        File pdf = getResourceFile("/V01_PrototipoBasico/resources/14128_RD484026_Entrega-segun-pedido_924322_29618832.pdf");
-
+        File pdf = new File("resources/albaran_fixture_minimo.pdf");
+        System.out.println("[DEBUG] Archivo encontrado: " + pdf.getAbsolutePath() + ", existe: " + pdf.exists());
+        assertTrue(pdf.exists(), "El archivo PDF de ejemplo debe existir para el test");
         List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
-
         assertFalse(lista.isEmpty(), "El PDF de ejemplo debería devolver productos");
         // más asserts según el contenido del PDF de prueba
     }
@@ -44,10 +25,8 @@ class ControladorTest {
     @Test
     @DisplayName("Debe parsear número, fecha y una línea de ítem con unidades")
     void testLeerAlbaran_ok() throws Exception {
-        
-        File pdf = getResourceFile("pdfs/albaran_ejemplo.pdf");
+        File pdf = new File("resources/albaran_fixture_minimo.pdf");
 
-        // Llama a tu método real
         List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
 
         assertNotNull(lista, "La lista no debe ser null");
@@ -55,47 +34,35 @@ class ControladorTest {
 
         ProductoEnAlbaran pea = lista.get(0);
 
-        // Ajusta getters a tus nombres reales:
-        assertEquals("12345", pea.getProducto().getCodigo(), "Código del producto");
-        assertEquals("ProductoXYZ", pea.getProducto().getNombre(), "Nombre del producto");
-        assertEquals(4, pea.getBultos_esperados(), "Bultos");
-        assertEquals(15, pea.getUnidades_esperadas(), "Unidades");
+        assertEquals("3097", pea.getProducto().getCodigo());
+        assertEquals("CREMA TARRO SOFT NIVEA", pea.getProducto().getNombre());
+        assertEquals(2, pea.getBultos_esperados());
+        assertEquals(4, pea.getUnidades_esperadas(), "Unidades debe ser 4");
 
         // Verifica Albarán (número y fecha):
-        assertEquals("12- 345678", pea.getAlbaran().getNumero(), "Número de albarán");
-        assertEquals(LocalDate.of(2025, 8, 31), pea.getAlbaran().getFecha(), "Fecha del albarán");
+        assertEquals("7- 924322", pea.getAlbaran().getNumero(), "Número de albarán");
+        assertEquals(LocalDate.of(2019, 10, 28), pea.getAlbaran().getFecha(), "Fecha del albarán");
     }
 
     @Test
     @DisplayName("Si el campo de unidades va vacío, debe interpretar 0 unidades")
     void testLeerAlbaran_sinUnidades() throws Exception {
-        File pdf = crearPdfTemporalConLineas(
-                "NUMERO DE ALBARAN ..........: 01- 9",
-                "Fecha ..:  01/01/25",
-                // Sin unidades (grupo 6 vacío) → tu código pone 0
-                "99 ABCdefgh   3  1      "
-        );
+        File pdf = new File("resources/albaran_fixture_varios.pdf");
 
         List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
 
-        assertEquals(1, lista.size());
-        ProductoEnAlbaran pea = lista.get(0);
+        assertEquals(4, lista.size());
+        ProductoEnAlbaran pea = lista.get(1); // El segundo ítem, que no tiene unidades
 
-        assertEquals("99", pea.getProducto().getCodigo());
-        assertEquals("ABCdefgh", pea.getProducto().getNombre());
-        assertEquals(3, pea.getBultos_esperados());
+        assertEquals("19830", pea.getProducto().getCodigo());
+        assertEquals("DESODORANTE SPRAY PIES", pea.getProducto().getNombre());
         assertEquals(0, pea.getUnidades_esperadas(), "Unidades debe ser 0 si el grupo está vacío");
     }
 
     @Test
     @DisplayName("Si no hay líneas que casen con el patrón, la lista debe ser vacía")
     void testLeerAlbaran_pdfSinCoincidenciasDevuelveVacio() throws Exception {
-        File pdf = crearPdfTemporalConLineas(
-                "NUMERO DE ALBARAN ..........: 02- 123",
-                "Fecha ..:  15/07/25",
-                "Esto no tiene formato de ítem válido",
-                "Tampoco esta línea"
-        );
+        File pdf = new File("resources/sinInf.pdf");
 
         List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
         assertNotNull(lista);
