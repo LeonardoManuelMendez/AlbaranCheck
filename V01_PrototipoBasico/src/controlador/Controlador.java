@@ -97,7 +97,6 @@ public class Controlador {
 		} catch (Exception e) {
 			System.out.println("Error inesperado: " + e.getMessage());
 		}
-		System.out.println(listaProductos.toString());
 
 		return listaProductos;
 	}

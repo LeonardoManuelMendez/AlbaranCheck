@@ -45,8 +45,10 @@ public class JFrameMenu extends JFrame {
         setTitle("AlbaranCheck");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
-        setSize(1000, 700);
+        setSize(1000, 900); // Tamaño inicial de la ventana. 1000 ancho x 700 alto
         setLocationRelativeTo(null);
+        // asignar el icono
+        setIconImage(new javax.swing.ImageIcon(getClass().getResource("/ficheros/logoAlbaranCkeck32x32.png")).getImage());
 
         // Crear el panel de contenido
         panelContenido = new JPanel(new BorderLayout());

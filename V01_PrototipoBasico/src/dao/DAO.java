@@ -38,7 +38,6 @@ public class DAO {
 			while (true) {
 				try {
 					Producto producto = (Producto) ois.readObject();
-					System.out.println("Producto leído: " + producto);
 					listaProductos.add(producto);
 				} catch (EOFException e) {
 					break; // Fin del archivo
