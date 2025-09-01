@@ -115,4 +115,32 @@ public class Controlador {
 		DAO.guardarListaProductos(listaProductos);
 	}
 	
+	public static String resultadoValidacion(ProductoEnAlbaran pea, Producto productoLeido, String eanLeido) {
+		if (eanLeido.equals(productoLeido.getEanProducto())) {
+			pea.setUnidades_recibidas(pea.getUnidades_recibidas() + 1);
+			return "Unidad del producto " + productoLeido.getNombre() + " recibida correctamente.";
+		} else if (eanLeido.equals(productoLeido.getEanBulto())) {
+			pea.setBultos_recibidos(pea.getBultos_recibidos() + 1);
+			return "Bulto del producto " + productoLeido.getNombre() + " recibido correctamente.";
+		} else {
+			return "El EAN leído no coincide con el producto esperado.";
+		}
+	}
+	
+	public static boolean esFormatoEANValido(String eanLeido) {
+		// Validar que el EAN tiene 13 dígitos numéricos
+		Pattern patronEAN = Pattern.compile("^\\d{13}$");
+		Matcher matcherEAN = patronEAN.matcher(eanLeido);
+		return matcherEAN.matches();
+	}
+	
+	public static Producto buscarProductoPorEan(List<Producto> listaProductos, String ean) {
+		for (Producto p : listaProductos) {
+			if (ean.equals(p.getEanProducto()) || ean.equals(p.getEanBulto())) {
+				return p;
+			}
+		}
+		return null;
+	}
+	
 }

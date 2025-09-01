@@ -30,12 +30,17 @@ import java.awt.event.ActionEvent;
 public class NuevoAlbaranGUI extends javax.swing.JPanel {
 
 	private static final long serialVersionUID = 1L;
+	private List<ProductoEnAlbaran> listaProductosEnAlbaran;
+	private List<Producto> listaProductos;
+	
 
 	/**
 	 * Creates new form NuevoPrueba
 	 */
 	public NuevoAlbaranGUI(List<Producto> listaProductos, List<ProductoEnAlbaran> listaProductosEnAlbaran, Albaran albaranActual) {
-		initComponents();
+		this.listaProductosEnAlbaran = listaProductosEnAlbaran;
+		this.listaProductos = listaProductos;
+		initComponents(listaProductos, listaProductosEnAlbaran);
 
 	}
 
@@ -47,7 +52,7 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 
 	// <editor-fold defaultstate="collapsed" desc="Generated
 	// Code">//GEN-BEGIN:initComponents
-	private void initComponents() {
+	private void initComponents(List<Producto> listaProductos, List<ProductoEnAlbaran> listaProductosEnAlbaran) {
 
 		jLabel1 = new javax.swing.JLabel();
 		jTextField1 = new javax.swing.JTextField();

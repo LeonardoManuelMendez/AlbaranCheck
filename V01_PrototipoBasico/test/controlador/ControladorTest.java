@@ -80,7 +80,26 @@ class ControladorTest {
     }
 
 	@Test
+	@DisplayName("Test de método no implementado aún")
 	void testBorrarLineadelDAT() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	@DisplayName("Test de método no implementado aún")
+	void testResultadoValidacion() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	@DisplayName("Test de método no implementado aún")
+	void testEsFormatoEANValido() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	@DisplayName("Test de método no implementado aún")
+	void testBuscarProductoPorEan() {
 		fail("Not yet implemented");
 	}
 
