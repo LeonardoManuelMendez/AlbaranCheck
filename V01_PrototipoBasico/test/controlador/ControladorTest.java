@@ -13,61 +13,39 @@ import org.junit.jupiter.api.Test;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.font.Standard14Fonts;
-import controlador.Controlador;
+import org.apache.pdfbox.pdmodel.font.PDType0Font;
 import modelo.ProductoEnAlbaran;
-import modelo.Albaran;
-import modelo.Producto;
+import java.io.File;
+import java.net.URISyntaxException;
+import java.net.URL;
 
 
 class ControladorTest {
 
-	 // Helper: crea un PDF de texto simple con las líneas dadas
-    private File crearPdfTemporalConLineas(String... lineas) throws IOException {
-        File tmp = Files.createTempFile("albaran_test_", ".pdf").toFile();
-        tmp.deleteOnExit();
-
-        try (PDDocument doc = new PDDocument()) {
-            PDPage page = new PDPage();
-            doc.addPage(page);
-
-            try (PDPageContentStream cs = new PDPageContentStream(doc, page)) {
-                cs.beginText();
-                cs.setFont(new PDFont(Standard14Fonts.FontName.HELVETICA), 11);
-                // Coordenadas base (y va decreciendo por línea)
-                float x = 50;
-                float y = 750;
-                cs.newLineAtOffset(x, y);
-
-                for (int i = 0; i < lineas.length; i++) {
-                    cs.showText(lineas[i]);
-                    cs.newLineAtOffset(0, -16); // salto línea aprox.
-                }
-
-                cs.endText();
-            }
-
-            doc.save(tmp);
+	private File getResourceFile(String path) throws URISyntaxException {
+        URL resource = getClass().getClassLoader().getResource(path);
+        if (resource == null) {
+            throw new IllegalArgumentException("No se encontró el recurso: " + path);
         }
+        return new File(resource.toURI());
+    }
 
-        return tmp;
+    @Test
+    @DisplayName("Debe leer un PDF de albarán real y devolver productos")
+    void testLeerAlbaranDesdePdf() throws Exception {
+        File pdf = getResourceFile("/V01_PrototipoBasico/resources/14128_RD484026_Entrega-segun-pedido_924322_29618832.pdf");
+
+        List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
+
+        assertFalse(lista.isEmpty(), "El PDF de ejemplo debería devolver productos");
+        // más asserts según el contenido del PDF de prueba
     }
 
     @Test
     @DisplayName("Debe parsear número, fecha y una línea de ítem con unidades")
     void testLeerAlbaran_ok() throws Exception {
-        // Ojo con los espacios, deben respetar tu regex.
-        // NUMERO: "NUMERO DE ALBARAN ..........: (\\d{1,2})- (\\d{1,9})"
-        // FECHA : "Fecha ..:  (\\d{2}/\\d{2}/\\d{2})"
-        // Ítem  : "(\\d{2,6})\\s{1,1}(.{3,32}?)\\s{1,1}(\\.{0,1})\\s{1,8}(\\d{1,6})\\s{1,3}(\\d{1,3})\\s{1,5}(\\d{0,4})"
-        File pdf = crearPdfTemporalConLineas(
-                "NUMERO DE ALBARAN ..........: 12- 345678",
-                "Fecha ..:  31/08/25",
-                // código(5) + espacio + nombre(>=3 chars) + espacio + "." opcional + espacios + bultos + espacios + ??? + espacios + unidades
-                // Aquí ejemplo con "." presente, bultos=4, (campo intermedio)=2, unidades=15
-                "12345 ProductoXYZ .    4  2    0015"
-        );
+        
+        File pdf = getResourceFile("pdfs/albaran_ejemplo.pdf");
 
         // Llama a tu método real
         List<ProductoEnAlbaran> lista = Controlador.leerAlbaran(pdf);
