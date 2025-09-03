@@ -23,13 +23,15 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
     private JTable tabla;
     private DefaultTableModel modelo;
     private List<ProductoEnAlbaran> listaProductosEnAlbaranRef;
+    private List<Producto> listaProductosRef;
 
-    public TablaProductosEnAlbaranPanel(List<ProductoEnAlbaran> listaProductosEnAlbaran) {
-        initializeComponents(listaProductosEnAlbaran);
+    public TablaProductosEnAlbaranPanel(List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaProductos) {
+        initializeComponents(listaProductosEnAlbaran, listaProductos);
     }
 
-    private void initializeComponents(List<ProductoEnAlbaran> listaProductosEnAlbaran) {
+    private void initializeComponents(List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaProductos) {
         this.listaProductosEnAlbaranRef = listaProductosEnAlbaran;
+        this.listaProductosRef = listaProductos;
 
         final String[] nombresColumnas = {
             "Código", "Nombre",
@@ -38,7 +40,7 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
             "Opciones"
         };
 
-        Object[][] datosfilas = convertirListaAArray(listaProductosEnAlbaran);
+        Object[][] datosfilas = convertirListaAArray(listaProductosEnAlbaran, listaProductos);
 
         modelo = new DefaultTableModel(datosfilas, nombresColumnas) {
             private static final long serialVersionUID = 1L;
@@ -56,7 +58,7 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
         this.add(scrollPane, java.awt.BorderLayout.CENTER);
     }
 
-    private void abrirDialogoEditar(int fila, List<ProductoEnAlbaran> listaProductosEnAlbaran) {
+    private void abrirDialogoEditarPEA(int fila, List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaPr) {
         String codigo = (String) modelo.getValueAt(fila, 0);
         ProductoEnAlbaran pea = buscarProductoEnAlbaranPorCodigo(codigo, listaProductosEnAlbaran);
         if (pea != null) {
@@ -71,6 +73,24 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
             dialog.setVisible(true);
         }
     }
+    
+    private void abrirDialogoEditarProducto(int fila, List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaPr) {
+		String codigo = (String) modelo.getValueAt(fila, 0);
+		ProductoEnAlbaran pea = buscarProductoEnAlbaranPorCodigo(codigo, listaProductosEnAlbaran);
+		// buscar el producto en la lista de productos
+		Producto producto = buscarProductoPorCodigo(codigo, listaPr);
+		if (pea != null) {
+			EditarCrearProductos dialog = new EditarCrearProductos(pea.getProducto(), listaPr);
+			dialog.addWindowListener(new WindowAdapter() {
+				@Override
+				public void windowClosed(WindowEvent e) {
+					actualizarTabla(listaProductosEnAlbaran);
+					tabla.clearSelection();
+				}
+			});
+			dialog.setVisible(true);
+		}
+	}
 
     private ProductoEnAlbaran buscarProductoEnAlbaranPorCodigo(String codigo, List<ProductoEnAlbaran> listaProductosEnAlbaran) {
         for (ProductoEnAlbaran pea : listaProductosEnAlbaran) {
@@ -81,8 +101,17 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
         }
         return null;
     }
+    
+    private Producto buscarProductoPorCodigo(String codigo, List<Producto> listaProductos) {
+		for (Producto producto : listaProductos) {
+			if (codigo.equals(producto.getCodigo())) {
+				return producto;
+			}
+		}
+		return null;
+	}
 
-    private Object[][] convertirListaAArray(List<ProductoEnAlbaran> listaProductosEnAlbaran) {
+    private Object[][] convertirListaAArray(List<ProductoEnAlbaran> listaProductosEnAlbaran, List<Producto> listaProductos) {
         if (listaProductosEnAlbaran == null) return new Object[0][7];
         Object[][] matriz = new Object[listaProductosEnAlbaran.size()][7];
         for (int i = 0; i < listaProductosEnAlbaran.size(); i++) {
@@ -92,8 +121,14 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
                 continue;
             }
             Producto producto = pea.getProducto();
+            Producto productoInfo = buscarProductoPorCodigo(producto.getCodigo(), listaProductos);
             matriz[i][0] = producto.getCodigo();
-            matriz[i][1] = producto.getNombre();
+            // el nombre del producto se obtiene del objeto Producto pero no del objeto Producto de la lista ProductoEnAlbaran. Si no del objeto Producto de la lista Productos
+            if (productoInfo != null && productoInfo.getNombre() != null) {
+                matriz[i][1] = productoInfo.getNombre();
+            } else {
+                matriz[i][1] = "No existe";
+            }
             matriz[i][2] = pea.getUnidades_esperadas();
             matriz[i][3] = pea.getBultos_esperados();
             matriz[i][4] = pea.getUnidades_recibidas();
@@ -109,7 +144,7 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
 
     public void actualizarTabla(List<ProductoEnAlbaran> listaProductosEnAlbaran) {
         this.listaProductosEnAlbaranRef = listaProductosEnAlbaran;
-        Object[][] datosfilas = convertirListaAArray(listaProductosEnAlbaran);
+        Object[][] datosfilas = convertirListaAArray(listaProductosEnAlbaran, listaProductosRef);
         modelo.setDataVector(datosfilas, new String[] {
             "Código", "Nombre",
             "Unidades esperadas", "Bultos esperados",
@@ -145,7 +180,7 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
         // Columna Opciones = índice 6
         TableColumn columnaOpciones = tabla.getColumnModel().getColumn(6);
 
-        JComboBox<String> comboBox = new JComboBox<>(new String[] { "", "Borrar", "Actualizar" });
+        JComboBox<String> comboBox = new JComboBox<>(new String[] { "", "Borrar Producto", "Actualizar Cantidades", "Agre/Modif Producto"});
         comboBox.setSelectedIndex(-1);
 
         comboBox.addActionListener(e -> {
@@ -154,12 +189,15 @@ public class TablaProductosEnAlbaranPanel extends JPanel {
                 String opcion = (String) comboBox.getSelectedItem();
                 if (opcion != null && !opcion.isEmpty()) {
                     switch (opcion) {
-                        case "Borrar":
+                        case "Borrar Producto":
                             modelo.removeRow(fila);
                             break;
-                        case "Actualizar":
-                            abrirDialogoEditar(fila, listaProductosEnAlbaranRef);
+                        case "Actualizar Cantidades":
+                            abrirDialogoEditarPEA(fila, listaProductosEnAlbaranRef, listaProductosRef);
                             break;
+                        case "Agre/Modif Producto":
+                        	abrirDialogoEditarProducto(fila, listaProductosEnAlbaranRef, listaProductosRef);
+							break;
                     }
                     if (fila < modelo.getRowCount()) {
                         modelo.setValueAt("", fila, 6);

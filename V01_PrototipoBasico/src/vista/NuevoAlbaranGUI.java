@@ -83,7 +83,7 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		jLabel3.setText("Articulos");
 		
 		// Crear el panel de la tabla usando TablaProductosEnAlbaranPanel
-		tablaPanel = new TablaProductosEnAlbaranPanel(listaProductosEnAlbaran);
+		tablaPanel = new TablaProductosEnAlbaranPanel(listaProductosEnAlbaran, listaProductos);
 		jScrollPane3.setViewportView(tablaPanel);
 		
 		JButton btnVerificar = new JButton("Verificar");
