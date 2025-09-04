@@ -10,7 +10,7 @@ import javax.swing.border.EmptyBorder;
 
 import dao.DAO;
 import modelo.Producto;
-
+import controlador.Controlador;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
@@ -38,7 +38,7 @@ public class EditarCrearProductos extends JDialog {
 		setModal(true); // Bloquea hasta cerrar (clave)
 		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 464, 287);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -121,7 +121,8 @@ public class EditarCrearProductos extends JDialog {
 						} else if (rdbtnBultos.isSelected()) {
 							formato = "Bultos";
 						}
-						if (producto == null) { // Crear nuevo producto
+						String codigoNuevoProducto = String.valueOf(producto.getCodigo());
+						if (producto == null || (Controlador.buscarProductoPorCodigo(listaProductos, codigoNuevoProducto)) == null) { // Crear nuevo producto
 							Producto nuevoProducto = new Producto(codigo, nombre);
 							nuevoProducto.setEanProducto(eanUnidad);
 							nuevoProducto.setEanBulto(eanBulto);
@@ -132,7 +133,7 @@ public class EditarCrearProductos extends JDialog {
 							producto.setNombre(nombre);
 							producto.setEanProducto(eanUnidad);
 							producto.setEanBulto(eanBulto);
-							producto.setFormato(formato);
+							producto.setFormato(formato);			
 						}
 						// Guardar la lista actualizada de productos
 						DAO.guardarListaProductos(listaProductos);

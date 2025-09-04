@@ -37,19 +37,21 @@ public class Controlador {
 			PDFTextStripper stripper = new PDFTextStripper();
 			String text = stripper.getText(document);
 			Pattern patronItems = Pattern.compile("""
-				    (?x)                             # modo extendido: ignora espacios y permite comentarios con #
-				    (\\d{2,6})                       # 1: Código del producto (2 a 6 dígitos)
-				    \\s{1}                           #    un espacio obligatorio
-				    (.{3,32}?)                       # 2: Nombre del producto (3 a 32 chars, lazy)
-				    \\s{1}                           #    un espacio obligatorio
-				    (\\.{0,1})                       # 3: Punto opcional
-				    \\s{1,8}                         #    1 a 8 espacios
-				    (\\d{1,6})                       # 4: Cantidad de bultos (1 a 6 dígitos)
-				    \\s{1,3}                         #    1 a 3 espacios
-				    (\\d{1,3})                       # 5: Campo intermedio (1 a 3 dígitos)
-				    \\s{1,5}                         #    1 a 5 espacios
-				    (\\d{0,4})                       # 6: Cantidad de unidades (0 a 4 dígitos; puede estar vacío)
+				    (?xm)                           # modo extendido + multilínea
+				    ^                               # inicio de línea
+				    (\\d{2,6})                      # 1: Código del producto (2 a 6 dígitos)
+				    \\s{1}                          #    un espacio obligatorio
+				    (.{3,32}?)                      # 2: Nombre del producto (3 a 32 chars, lazy)
+				    \\s{1}                          #    un espacio obligatorio
+				    (\\.{0,1})                      # 3: Punto opcional
+				    \\s{1,8}                        #    1 a 8 espacios
+				    (\\d{1,6})                      # 4: Cantidad de bultos (1 a 6 dígitos)
+				    \\s{1,3}                        #    1 a 3 espacios
+				    (\\d{1,3})                      # 5: Campo intermedio (1 a 3 dígitos)
+				    \\s{1,5}                        #    1 a 5 espacios
+				    (\\d{0,4})                      # 6: Cantidad de unidades (0 a 4 dígitos; puede estar vacío)
 				    """);
+
 
 
 			Matcher matcherItems = patronItems.matcher(text);
@@ -148,6 +150,16 @@ public class Controlador {
 	public static Producto buscarProductoPorEan(List<Producto> listaProductos, String ean) {
 		for (Producto p : listaProductos) {
 			if (ean.equals(p.getEanProducto()) || ean.equals(p.getEanBulto())) {
+				return p;
+			}
+		}
+		return null;
+	}
+	
+	// buscar cofdigo de producto en la lista de productos
+	public static Producto buscarProductoPorCodigo(List<Producto> listaProductos, String codigo) {
+		for (Producto p : listaProductos) {
+			if (codigo.equals(p.getCodigo())) {
 				return p;
 			}
 		}

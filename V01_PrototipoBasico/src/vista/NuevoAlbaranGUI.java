@@ -153,21 +153,20 @@ public class NuevoAlbaranGUI extends javax.swing.JPanel {
 		if (result == JFileChooser.APPROVE_OPTION) {
 			File archivoElegido = fileChooser.getSelectedFile();
 			jTextField1.setText(archivoElegido.getAbsolutePath());
-			List<ProductoEnAlbaran> paraTabla = null;
 			try {
-				paraTabla = Controlador.leerAlbaran(archivoElegido);
+				listaProductosEnAlbaran = Controlador.leerAlbaran(archivoElegido);
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(this, "Error al leer el archivo PDF: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
 				e.printStackTrace();
 			}
 
 			// Colocar la información del albarán seleccionado
-			Albaran albaran = paraTabla.get(0).getAlbaran();
+			Albaran albaran = listaProductosEnAlbaran.get(0).getAlbaran();
 			jTextArea1.setText("Albarán número: " + albaran.getNumero());
 			jTextArea1.append("\n" + "Fecha: " + albaran.getFecha());
 
 			// Actualizar la tablaPanel con los nuevos datos
-			tablaPanel.actualizarTabla(paraTabla);
+			tablaPanel.actualizarTabla(listaProductosEnAlbaran);
 		}
 
 	}// GEN-LAST:event_jButton1ActionPerformed
