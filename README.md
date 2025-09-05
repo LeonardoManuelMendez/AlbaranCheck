@@ -28,7 +28,7 @@ El sistema generará un informe detallado indicando los productos recibidos, fal
 ## Documentación
 
 La documentación del proyecto se encuentra en la carpeta `docs`, donde se detallan los aspectos técnicos y de diseño de cada versión.
-[Documentación del Proyecto AlbaranCheck](https://github.com/LeonardoManuelMendez/AlbaranCheck/blob/14387fdbf6f6897a2105e2567482b2446306f94a/docs/ProyectoAlbaranCheck.pdf)
+[Documentación del Proyecto AlbaranCheck](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/docs)
 
 ## Índice de versiones
 
