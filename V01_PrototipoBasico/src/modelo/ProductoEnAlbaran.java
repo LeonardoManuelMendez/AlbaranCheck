@@ -20,6 +20,14 @@ public class ProductoEnAlbaran {
         this.unidades_recibidas = 0;
         this.bultos_recibidos = 0;
     }
+    public ProductoEnAlbaran(Producto producto, Albaran albaran, int unidades_esperadas, int bultos_esperados, int unidades_recibidas, int bultos_recibidos) {
+		this.producto = producto;
+		this.albaran = albaran;
+		this.unidades_esperadas = unidades_esperadas;
+		this.bultos_esperados = bultos_esperados;
+		this.unidades_recibidas = unidades_recibidas;
+		this.bultos_recibidos = bultos_recibidos;
+	}
  
     public Producto getProducto() {
         return producto;

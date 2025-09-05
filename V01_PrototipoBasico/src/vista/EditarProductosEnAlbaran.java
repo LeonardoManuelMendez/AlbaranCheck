@@ -90,6 +90,7 @@ public class EditarProductosEnAlbaran extends JDialog {
         contentPanel.add(lblCantidadEsperada);
 
         textFieldCantEsp = new JTextField();
+        textFieldCantEsp.setEditable(false);
         textFieldCantEsp.setBounds(144, 137, 114, 21);
         contentPanel.add(textFieldCantEsp);
         textFieldCantEsp.setColumns(10);
