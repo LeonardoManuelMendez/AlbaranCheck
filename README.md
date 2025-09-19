@@ -33,10 +33,10 @@ La documentación del proyecto se encuentra en la carpeta `docs`, donde se detal
 ## Índice de versiones
 
 - [Versión 0.1: Prototipo Básico](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V01_PrototipoBasico)
-- [Versión 0.2: Persistencia con MySQL](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V02_PersistenciaMySQL)
-- [Versión 1.0: ORM con Hibernate](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V01_PrototipoBasico)
-- [Versión 2.0: Aplicación Web con Spring Boot](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V01_PrototipoBasico)
-- [Versión 3.0: App Multiplataforma con FlutterFlow](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V03_AppMultiplataforma)
-- [Versión 4.0: App Nativa Android](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V04_AppNativaAndroid)
-- [Versión 5.0: App Android con IA y backend on-prem](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V05_AppAndroidIA)
+- [Versión 0.2: Persistencia con MySQL](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V02_BDMySQL)
+- [Versión 1.0: ORM con Hibernate](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V10_MapeoObjetoRelacional)
+- [Versión 2.0: Aplicación Web con Spring Boot](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V20_VersionWeb)
+- [Versión 3.0: App Multiplataforma con FlutterFlow](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V30_VersionMovil)
+- [Versión 4.0: App Nativa Android](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V40_AplicacionNativaAndroid)
+- [Versión 5.0: App Android con IA y backend on-prem](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V50_AppAndroidconIAybackendOn-prem)
 
