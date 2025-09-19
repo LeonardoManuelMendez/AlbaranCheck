@@ -32,7 +32,7 @@ La documentación del proyecto se encuentra en la carpeta `docs`, donde se detal
 
 ## Índice de versiones
 
-- [Versión 0.1: Prototipo Básico](V%200.1%3A%20Prototipo%20B%C3%A1sico%20%28JAVA%20Swing%20sin%20frameworks%2C%20sin%20BD%29)
+- [Versión 0.1: Prototipo Básico](https://github.com/LeonardoManuelMendez/AlbaranCheck/tree/main/V01_PrototipoBasico)
 - [Versión 0.2: Persistencia con MySQL](V%200.2%3A%20Almacenamiento%20en%20Base%20de%20Datos%20%28Java%20sin%20frameworks%2C%20MySQL%29)
 - [Versión 1.0: ORM con Hibernate](V%201.0%3A%20Mapeo%20Objeto-Relacional%20%28Java%20sin%20frameworks%2C%20MySQL%2C%20Hibernate%29)
 - [Versión 2.0: Aplicación Web con Spring Boot](V%202.0%3A%20Versi%C3%B3n%20Web%20%28Java%2C%20Spring%20Boot%2C%20Spring%20MVC%2C%20Thymeleaf%2C%20MySQL%29)
